@@ -1,0 +1,70 @@
+
+body{
+    font-family: serif;
+}
+.top_midasi{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.top_back_col{
+    width: 100%;
+    height: 100vh;
+    background: url(../image/top/top_img.jpg) center center;
+    background-size: cover;
+}
+.top_img{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.top_maki{
+    position: absolute;
+    top: 30px;
+    background: rgba(125, 125, 125, 0.4);
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    margin: 0 20px 0 0;
+}
+.top_maki p{
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    padding: 10px 15px;
+}
+.top_main_img{ 
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.top_main_img img{
+    width: 900px;
+}
+.top_main_img p{
+    padding: 20px 0 0 0;
+    color: #ffffff;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+}
+/*maki_video*/
+.maki_video{
+    display: flex;
+}
+.maki_video_you {
+    width: 80%;
+}
+.maki_video_you iframe{
+    padding: 30px;
+    width: 100%;
+}
+.maki_video_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.maki_video_text p{
+    width: 50%;
+}
