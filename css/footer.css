@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+body{
+    font-size:16px;
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+    margin:0;
+    padding:0;
+}
+
+/*-----------------------------------
+    footer
+------------------------------------*/
+#gfoot{
+    background-image:url(../image/footer/mori.png);
+    background-size:cover;
+    background-position:center center;
+    position:relative;
+    font-weight:bold;
+}
+#gfoot::before{
+    content:"";
+    width:1.5px;
+    height:105px;
+    background:rgba(0,0,0,0.4);
+    position:absolute;
+    left:50%;
+    top:-55px;
+    z-index:99;
+}
+#gfoot .back_cover{
+    position:absolute;
+    width: 100%;
+    height:100%;
+    background:rgba(255,255,255,0.8);
+}
+#gfoot .foot_left img{
+    width:70%;
+    margin-top:90px;
+    position: relative;
+}
+#gfoot .foot_center{
+    margin-top:70px;
+    position:relative;
+    right: 75px;
+}
+#gfoot .foot_center a{
+  transition: text-shadow .5s;
+}
+#gfoot .foot_center a:hover{
+    text-shadow: 0 4px 4px rgba(0,0,0,0.4);
+
+}
+#gfoot .foot_center .policy{
+    margin:50px 0 50px 0;
+    font-size:0.75rem;
+}
+
+/*--------------------------------------
+    .foot_right
+----------------------------------------*/
+#gfoot .foot_right{
+    margin-top: 100px;
+    position: relative;
+    right:40px;
+}
+#foot_activities{
+    margin:0;
+    font-size: 1.5rem;
+    padding: 0 10px;
+}
+#foot_kirikiri{
+    margin:0;
+    font-size: 3.5rem;
+    padding: 0px 10px;
+}
+#foot_tel{
+    font-size:1.5rem;
+    margin:25px 0 0 0;
+    letter-spacing: 0.3em;
+}
+#foot_reception{
+    margin:0;
+    letter-spacing: 0.1em;
+}
+#foot_post{
+    margin: 30px 0 0 0;
+    letter-spacing: 0.5em;
+}
+#foot_copy{
+    margin-top: 41px;
+    letter-spacing: 0.1em
+}
+#foot_address{
+    margin:0px;
+}
+#foot_address span{
+    letter-spacing: 0.2em;
+}
+/*ここまでfoot_right*/
+#foot_flex{
+    display:flex;
+    justify-content:space-around;
+    position:relative;
+}
+#gfoot a{
+    text-decoration:none;
+    color:black;
+}
+/*--------------------------------------------
+    ここまでfooter
+-----------------------------------------------*/
