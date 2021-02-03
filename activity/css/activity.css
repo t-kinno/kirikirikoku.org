@@ -4,35 +4,35 @@ html,body{
   margin: 0;
   padding: 0;
 }
-#about body {
+#activity body {
   width: 100%;
   margin: 0;
 }
-#about #about_top {
+#activity #activity_top {
   width: 100%;
   height: 60vh;
   background-image: url(../images/bob1213pb2101110567.jpg);
   background-size: cover;
   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-                    url('../images/bob1213pb2101110567.jpg');
+                    url('../images/activ_top.jpg');
   position: relative;
 }
-#about #about_top::before {
+#activity #activity_top::before {
   content:  "";
   width:  2px;
   height: 122px;
   background: rgba(0, 0, 0, 0.51);
   position: absolute;
   left: 50%;
-  bottom: -60px;
+  top: 415px;
   z-index: 99;
 }
-#about .logo img {
+#activity .logo img {
   position: absolute;
   width: 7%;
   margin: 40px 0 0 30px;
 }
-#about .about_top_midashi {
+#activity .activity_top_midashi {
   width: 100%;
   height: 100%;
   display: flex;
@@ -40,7 +40,7 @@ html,body{
   align-items: center;
   color: #fff;
 }
-#about .about_top_midashi h2 {
+#activity .activity_top_midashi h2 {
   margin: 0;
   font-size: 2.7rem;
   letter-spacing: 0.2em;
@@ -49,61 +49,42 @@ html,body{
   flex-wrap: wrap;
   justify-content: center;
 }
-#about .about_top_midashi h2 span {
+#activity .activity_top_midashi h2 span {
   font-size: 1.8rem;
   width: 100%;
   text-align: center;
   margin-bottom: 0.7em;
-} 
-/* -------------main------------- */
-#about main section {
-  text-align: center;
 }
-#about main section div {
-  width: 46%;
+/* -------------main------------- */
+#activity main {
+  margin-top: 150px;
+}
+#activity main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
   margin: auto;
 }
-#about main section h1 {
-  font-size: 2.8rem;
+#activity .activity_left {
+  width: 60%;
+}
+#activity .activity_left h1 {
+  font-size: 1.8rem;
   letter-spacing: 0.2em;
-  margin: 125px 0 55px 0;
-  position: relative;
+  margin-bottom: 47px;
 }
-#about main section h1::before {
-  content:  "";
-  width:  2px;
-  height: 220px;
-  background: rgba(0, 0, 0, 0.51);
-  position: absolute;
-  left: 50%;
-  top: 415px;
-  z-index: 99;
-  margin-top: 80px;
-}
-#about main section p {
+#activity .activity_left p {
   font-size: 1.1rem;
   font-weight: bold;
   letter-spacing: 0.1em;
   line-height: 2.5em;
   text-align: left;
 }
-#about main section h3 {
-  font-size: 2.1rem;
-  letter-spacing: 0.2em;
-  margin: 364px 0 100px 0;
-  position: relative;
+#activity .activity_right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin-left: 105px;
+  margin-bottom: 100px;
 }
-#about main section h3::before {
-  content:  "";
-  width:  191px;
-  height: 1px;
-  background: rgba(0, 0, 0, 0.51);
-  position: absolute;
-  left: 37%;
-  top: 75px;
-  z-index: 99;
-}
-#about main section:last-of-type {
-  margin-bottom: 250px;
-}
-
