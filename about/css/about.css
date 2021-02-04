@@ -76,7 +76,7 @@ html,body{
   background: rgba(0, 0, 0, 0.51);
   position: absolute;
   left: 50%;
-  top: 415px;
+  bottom: -580px;
   z-index: 99;
   margin-top: 80px;
 }
@@ -99,7 +99,6 @@ html,body{
   height: 1px;
   background: rgba(0, 0, 0, 0.51);
   position: absolute;
-  left: 37%;
   top: 75px;
   z-index: 99;
 }
