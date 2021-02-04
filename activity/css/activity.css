@@ -63,11 +63,11 @@ html,body{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 #activity .activity_left {
-  width: 60%;
+  width: 50%;
 }
 #activity .activity_left h1 {
   font-size: 1.8rem;
@@ -75,16 +75,19 @@ html,body{
   margin-bottom: 47px;
 }
 #activity .activity_left p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.1em;
   line-height: 2.5em;
   text-align: left;
 }
 #activity .activity_right {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: center;
   margin-left: 105px;
-  margin-bottom: 100px;
+  margin-bottom: 55px;
+}
+#activity .activity_right img {
+  width: 484px;
 }
