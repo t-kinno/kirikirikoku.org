@@ -4,20 +4,20 @@ html,body{
   margin: 0;
   padding: 0;
 }
-#activity body {
+#forest body {
   width: 100%;
   margin: 0;
 }
-#activity #activity_top {
+#forest #forest_top {
   width: 100%;
   height: 60vh;
   background-image: url(../images/bob1213pb2101110567.jpg);
   background-size: cover;
   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-                    url('../images/activ_top.jpg');
+                    url('../images/home_img1.jpg');
   position: relative;
 }
-#activity #activity_top::before {
+#forest #forest_top::before {
   content:  "";
   width:  2px;
   height: 122px;
@@ -27,12 +27,12 @@ html,body{
   bottom: -60px;
   z-index: 99;
 }
-#activity .logo img {
+#forest .logo img {
   position: absolute;
   width: 7%;
   margin: 40px 0 0 30px;
 }
-#activity .activity_top_midashi {
+#forest .forest_top_midashi {
   width: 100%;
   height: 100%;
   display: flex;
@@ -40,7 +40,7 @@ html,body{
   align-items: center;
   color: #fff;
 }
-#activity .activity_top_midashi h2 {
+#forest .forest_top_midashi h2 {
   margin: 0;
   font-size: 2.7rem;
   letter-spacing: 0.2em;
@@ -49,45 +49,10 @@ html,body{
   flex-wrap: wrap;
   justify-content: center;
 }
-#activity .activity_top_midashi h2 span {
+#forest .forest_top_midashi h2 span {
   font-size: 1.8rem;
   width: 100%;
   text-align: center;
   margin-bottom: 0.7em;
 }
 /* -------------main------------- */
-#activity main {
-  margin-top: 150px;
-}
-#activity main section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  margin: auto;
-}
-#activity .activity_left {
-  width: 50%;
-}
-#activity .activity_left h1 {
-  font-size: 1.8rem;
-  letter-spacing: 0.3em;
-  margin-bottom: 47px;
-}
-#activity .activity_left p {
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  line-height: 2.5em;
-  text-align: left;
-}
-#activity .activity_right {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  margin-left: 105px;
-  margin-bottom: 55px;
-}
-#activity .activity_right img {
-  width: 484px;
-}
