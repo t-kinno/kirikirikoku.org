@@ -14,7 +14,7 @@ html,body{
   background-image: url(../images/bob1213pb2101110567.jpg);
   background-size: cover;
   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-                    url('../images/home_img1.jpg');
+                    url('../images/tree_climb.JPG');
   position: relative;
 }
 #forest #forest_top::before {
@@ -63,16 +63,37 @@ html,body{
   width: 80%;
   margin: auto;
 }
-#forest .forest_left {
+#forest .left {
   width: 50%;
 }
-#forest .forest_right {
+#forest .left h3 span {
+  font-size: 2.5em;
+}
+#forest .left h3 {
+  font-size: 1em;
+}
+#forest .right {
   width: 50%;
   display: flex;
   justify-content: center;
   margin-left: 15px;
   margin-top: 150px;
 }
-#forest .flex_midashi {
-  background-image: url(../images/);
+#forest .reuse_midashi {
+  width: 100%;
+  height: 45vh;
+  background-size: cover;
+  background-image: url('../images/DSC_3928.jpg');
+}
+#forest .reuse {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#forest .isolation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
 }
