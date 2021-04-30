@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/nomalize.css">
+	<link rel="stylesheet" href="css/contact.css">
+	<title>contact - 吉里吉里国</title>
+</head>
+<body id="contact">
+  <main>
+    
+    <!-- 
+      「同意しないと送信できないように」みたいな設定はwordpressの方で出来そうなのでガワだけ作る
+      
+      保留：内容記入、内容確認、送信完了の三つが入る
+      　　　スクロールバーのデザイン
+      -->
+    <section id="contact_top">
+		  <div class="contact_top_midashi">
+			  <h1 class="heading">お問い合わせ</h1>
+        <div>
+          <p>商品、会社、加工方法などに関するご質問を受け付けております。</p>
+          <p>お気軽にお問い合わせください。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="border order">
+      <h2 class="heading">電話・FAXでのお問い合わせ・ご注文</h2>
+      <div class="order_info">
+        <p><span>TEL:</span>0193-64-4130</p>
+        <p><span>FAX:</span>0193-63-5917</p>
+      </div>
+    </section>
+
+    <section class="border">
+      <h2 class="heading">コンタクトフォーム</h2>
+      <p>以下のフォームからお問い合わせください。送信完了後、受領完了の自動送信メールをお送りしております。
+        その後担当者より2〜3営業日以内にメールでご連絡させていただきます。
+        万が一ご連絡がない場合は、お手数ですが、095-870-7447までご連絡をお願いいたします。</p>
+      <p>携帯のメールアドレスを設定のお客様は、「メールの受信拒否、ドメイン指定受信、迷惑メール防止機能」等を設定している場合、
+        受信ができない場合がありますのでご注意ください。</p>
+      <p>複数配送先のオーダーシートを送る場合は、フォームの【添付ファイル】の項目で【ファイルを選択】をクリックして、
+        記入済みのExcelファイルを選択してください。</p>
+    </section>
+
+    <section class="form_section">
+      <div class="form_description">
+        <h3 class="heading">コンタクトフォーム</h3>
+        
+        <div class="list">
+          <p class="hidden_element">-----</p>
+          <p class="current">内容記入</p>
+          <p>-----<span class="hidden_element">-----</span></p>
+          <p>内容確認</p>
+          <p>-----<span class="hidden_element">-----</span></p>
+          <p>送信確認</p>
+          <p class="hidden_element">-----</p>
+        </div>
+        
+        <p class="required">がついている項目は必須項目です。</p>
+      </div>
+      <form action="/confirm.html" method="post" id="contact_form">
+        <div>
+          <p class="required">お名前</p>
+          <input type="text" name="namae" placeholder="お名前&#8251;" class="content" required>
+        </div>
+        <div>
+          <p>会社・団体名</p>
+          <input type="text" name="company" placeholder="会社・団体名" class="content">
+        </div>
+        <div>
+          <p>お電話番号</p>
+          <input type="text" name="phone" placeholder="お電話番号" class="content">
+        </div>
+        <div>
+          <p class="required">メールアドレス</p>
+        <input type="text" name="mail" placeholder="メールアドレス&#8251;" class="content" required>
+      </div>
+      <div>
+        <p class="required">メールアドレス（確認用）</p>
+        <input type="text" name="mail_confirm" placeholder="メールアドレス（確認用）&#8251;" class="content" required>
+      </div>
+      <div>
+        <p class="required">内容</p>
+        <textarea name="text" class="content"></textarea>
+      </div>
+
+        
+        
+      </form>
+      <div class="container scroll">
+        <div class="scrollable">
+          <div class="adjustment">
+            <p>プライバシー・ポリシーに則った個人情報の取扱いを行います。</p>
+            <h3>1.個人情報の定義</h3>
+            <p>
+              「個人情報」とは、生存する個人に関する情報であって、
+              当該情報に含まれる氏名、生年月日その他の記述等により特定の個人を識別することができるもの、
+              及び他の情報と容易に照合することができ、それにより特定の個人を識別することができることとなるものをいいます。
+            </p>
+            <h3>2.個人情報の収集</h3>
+            <p>
+              当店舗では商品のご購入、お問合せをされた際にお客様の個人情報を収集することがございます。
+              収集するにあたっては利用目的を明記の上、適法かつ公正な手段によります。
+              当ショップで収集する個人情報は以下の通りです。
+            </p>
+            <ol>
+              <li>お名前、フリガナ</li>
+              <li>ご住所</li>
+              <li>お電話番号</li>
+              <li>メールアドレス</li>
+              <li>パスワード</li>
+              <li>配送先情報</li>
+              <li>当店舗とのお取引履歴及びその内容</li>
+              <li>上記を組み合わせることで特定の個人が識別できる情報</li>
+            </ol>
+  
+            <h3>3.個人情報の利用</h3>
+            <p>当ショップではお客様からお預かりした個人情報の利用目的は以下の通りです。</p>
+            <ol>
+              <li>ご注文の確認、照会</li>
+              <li>商品発送の確認、照会</li>
+              <li>お問合わせの返信時</li>
+            </ol>
+            <p>当ショップでは、下記の場合を除いてはお客様の断りなく第三者に個人情報を開示・提供することはいたしません。</p>
+            <ol>
+              <li>法令に基づく場合、及び国の機関若しくは地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合</li>
+              <li>人の生命、身体又は財産の保護のために必要がある場合であって、本人の同意を得ることが困難である場合</li>
+              <li>当ショップを運営する会社の関連会社で個人データを交換する場合</li>
+            </ol>
+  
+            <h3>4.個人情報の安全管理</h3>
+            <p>
+              お客様よりお預かりした個人情報の安全管理はサービス提供会社によって合理的、組織的、物理的、人的、技術的施策を講じるとともに、
+              当ショップでは関連法令に準じた適切な取扱いを行うことで個人データへの不正な侵入、個人情報の紛失、改ざん、漏えい等の危険防止に努めます。
+            </p>
+  
+            <h3>5.個人情報の訂正、削除</h3>
+            <p>お客様からお預かりした個人情報の訂正・削除は下記の問合せ先よりお知らせ下さい。</p>
+  
+            <h3>6.cookie(クッキー)の使用について</h3>
+            <p>当社は、お客様によりよいサービスを提供するため、cookie （クッキー）を使用することがありますが、
+              これにより個人を特定できる情報の収集を行えるものではなく、お客様のプライバシーを侵害することはございません。
+              また、cookie （クッキー）の受け入れを希望されない場合は、ブラウザの設定で変更することができます。
+              ※cookie （クッキー）とは、サーバーコンピュータからお客様のブラウザに送信され、
+              お客様が使用しているコンピュータのハードディスクに蓄積される情報です。
+            </p>
+  
+            <h3>8.お問合せ先</h3>
+            <p>特定商取引に基づく表記をご覧ください。</p>
+  
+            <h3>9.プライバシーポリシーの変更</h3>
+            <p>
+              当ショップでは、収集する個人情報の変更、利用目的の変更、
+              またはその他プライバシーポリシーの変更を行う際は、当ページへの変更をもって公表とさせていただきます。
+            </p>
+          </div>
+        </div>
+        <div class="scrollbar">
+          <div class="scrollbar-thumb"></div>
+        </div>
+      </div>
+      <div class="submit_confirm">
+        <p><input type="radio" name="agree" value="agree" id="agree" form="contact_form" required><label for="agree">プライバシーポリシーに同意する</label></p>
+        <p><input type="submit" value="送信内容を確認する" form="contact_form" class="submit_btn"></p>
+      </div>
+    </section>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+  </main>
+</body>
+</html>
