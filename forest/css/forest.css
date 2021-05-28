@@ -4,11 +4,11 @@ html,body{
   margin: 0;
   padding: 0;
 }
-#forest body {
+#project body {
   width: 100%;
   margin: 0;
 }
-#forest #forest_top {
+#project #project_top {
   width: 100%;
   height: 590px;
   background-size: cover;
@@ -16,7 +16,7 @@ html,body{
   position: relative;
   background-position: center center;
 }
-#forest #forest_top::before {
+#project #project_top::before {
   content:  "";
   width:  2px;
   height: 122px;
@@ -26,12 +26,12 @@ html,body{
   bottom: -60px;
   z-index: 99;
 }
-#forest .logo img {
+#project .logo img {
   position: absolute;
   width: 7%;
   margin: 40px 0 0 30px;
 }
-#forest .forest_top_midashi {
+#project .top_midashi {
   width: 100%;
   height: 100%;
   display: flex;
@@ -39,7 +39,7 @@ html,body{
   align-items: center;
   color: #fff;
 }
-#forest .forest_top_midashi h2 {
+#project .top_midashi h2 {
   margin: 0;
   font-size: 2.2rem;
   letter-spacing: 0.2em;
@@ -48,99 +48,148 @@ html,body{
   flex-wrap: wrap;
   justify-content: center;
 }
-#forest .forest_top_midashi h2 span {
+#project .top_midashi h2 span {
   font-size: 1.5rem;
   width: 100%;
   text-align: center;
   margin-bottom: 0.7em;
 }
 /* -------------main------------- */
-#forest .project_overview {
+#project .project_overview {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   width: 80%;
   margin: 130px auto 100px;
 }
-#forest .project_overview .left {
+#project .project_overview .left {
   width: 50%;
   display: flex;
   justify-content: center;
 }
-#forest .project_overview .left h3 {
+#project .project_overview .left h3 {
   font-size: 2.2rem;
   margin: 0;
   letter-spacing: 0.2em;
   color: #A7C893;
 }
-#forest .project_overview .right {
+#project .project_overview .right {
   width: 50%;
   display: flex;
   justify-content: center;
   margin-left: 15px;
 }
-#forest .project_overview .right p {
+#project .project_overview .right p {
   margin: 0;
 }
-#forest .project_title .left {
-  display: flex;
-  justify-content: center;
-}
-#forest .project_title .left div {
+#project #project_title .left div {
   display: flex;
   flex-direction: column;
 }
-#forest .project_title .left p {
+#project #project_title .left p {
   display: inline-block;
   line-height: 1;
   margin-top: 0;
   margin-bottom: 2em;
   font-size: 1.1rem;
 }
-#forest .project_title .left h3 {
+#project #project_title .left h3 {
   display: inline-block;
 }
-#forest .project_title .left h3 span {
+#project #project_title .left h3 span {
   font-size: 1.5em;
   letter-spacing: 0.2em;
 }
-#forest .project_title .right p {
+#project #project_title .right p {
   margin-top: 3.3rem;
 }
 
 
 
 
-#forest .project1_midashi {
+#project .project1_midashi {
   width: 100%;
   height: 510px;
   background-size: cover;
   background-image: url('../images/maki-min.jpg');
 }
-#forest .project2_midashi {
+#project .project2_midashi {
   width: 100%;
   height: 510px;
   background-size: cover;
   background-image: url('../images/ringyo-min.jpg');
 }
-#forest .project3_midashi {
+#project .project3_midashi {
   width: 100%;
   height: 510px;
   background-size: cover;
   background-image: url('../images/yamamaki-min.jpg');
 }
-#forest .project {
+#project .project {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-#forest p {
+#project p {
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.1em;
   line-height: 2.5em;
   text-align: left;
 }
-#forest p span {
+#project p span {
   font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  #project .top_midashi {
+    height: 60vh;
+  }
+  #project #project_top {
+    height: auto;
+    background-image: url(../images/tree_climb-mob-min.jpg);
+  }
+  #project #project_top::before {
+    display: none;
+  }
+  #project .project_overview {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 90%;
+  }
+  #project .project_overview .left,
+  #project .project_overview .right {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  #project #project_title .left p {
+    font-size: 1.8rem;
+    margin-bottom: 1em;
+  }
+  #project #project_title .left h3 span {
+    font-size: 1.2em;
+  }
+  #project #project_title .left h3 {
+    font-size: 10vw;
+    letter-spacing: 0.1rem;
+    line-height: 1.2;
+  }
+  #project p {
+    font-size: 1.5rem;
+  }
+  #project .project1_midashi {
+    background-image: url('../images/maki-min-mob.jpg');
+    height: 330px;
+  }
+  #project .project2_midashi {
+    background-image: url('../images/ringyo-min-mob.jpg');
+    height: 330px;
+  }
+  #project .project3_midashi {
+    background-image: url('../images/yamamaki-min-mob.jpg');
+    height: 330px;
+  }
+  #project .project_overview .left h3 {
+    font-size: 2.8rem;
+    margin-bottom: 70px;
+}
 }
