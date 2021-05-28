@@ -103,26 +103,19 @@ html,body{
 #project #project_title .right p {
   margin-top: 3.3rem;
 }
-
-
-
-
-#project .project1_midashi {
+#project .project_midashi_image {
   width: 100%;
-  height: 510px;
+  height: 50vh;
+  min-height: 300px;
   background-size: cover;
+}
+#project .project1_midashi {
   background-image: url('../images/maki-min.jpg');
 }
 #project .project2_midashi {
-  width: 100%;
-  height: 510px;
-  background-size: cover;
   background-image: url('../images/ringyo-min.jpg');
 }
 #project .project3_midashi {
-  width: 100%;
-  height: 510px;
-  background-size: cover;
   background-image: url('../images/yamamaki-min.jpg');
 }
 #project .project {
@@ -143,6 +136,7 @@ html,body{
 @media screen and (max-width: 768px) {
   #project .top_midashi {
     height: 60vh;
+    min-height: 400px;
   }
   #project #project_top {
     height: auto;
