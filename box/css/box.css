@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 body{
-    font-family: "Yu Mincho",serif;
-    font-size: 18px;
+    font-family: "Yu Mincho",serif;;
+    font-size: 1rem;
     margin: 0;
 } 
 p{
@@ -34,20 +34,19 @@ p{
     grid-template-rows: 100% 4fr 1fr;
     grid-auto-rows: 100%;
 }
-#box_wrapper .grid_box p{
-    font-size: 1.1rem;
-}
 #box_wrapper .grid_box >div{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-#box_wrapper .grid_box h2{
+#box_wrapper .grid_box >p{
+    font-size: 100px;
+}
+#box_wrapper .grid_box h2,h3{
     margin: 0;
-    font-size: 1.7rem;
 }
 #box_wrapper .grid_box .title_name{
-    margin: 0 35px;
+    margin: 0 50px;
     padding-top: 10px;
 }
 /*--------------------------
@@ -84,7 +83,7 @@ p{
 /*------------------
 画面を縮めた場合
 --------------------*/
-@media screen and (max-width: 1115px){
+@media screen and (max-width: 1106px){
     #box_wrapper .title_name  span{
         display:flex;
         flex-wrap:wrap;
@@ -96,42 +95,4 @@ p{
         padding: 28px 0;
     }
 
-}
-
-/*-----------------------------------
-レスポンシブデザイン
--------------------------------------*/
-@media screen and (max-width: 768px){
-    #box_wrapper .grid_box{
-        display: block; 
-    }
-    #box_wrapper .box1{
-        height: 250px;
-    }
-    #box_wrapper .box2{
-        height: 250px;
-    }
-    #box_wrapper .box3{
-        height: 250px;
-    }
-    #box_wrapper .bgc{
-        padding: 20px 0 0 0;
-    }
-    #box_wrapper .title_name p{
-        display: flex;
-        font-size: 0.9rem;
-    }
-    #box_wrapper .title_name h2{
-        display: flex;
-        font-size: 1.4rem;
-    }
-}
-
-@media screen and (max-width: 330px){
-    #box_wrapper .title_name p{
-        display: block;
-    }
-    #box_wrapper .title_name h2{
-        display: block;
-    }
 }
