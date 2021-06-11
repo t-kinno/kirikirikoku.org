@@ -106,3 +106,38 @@ html,body{
   margin-bottom: 250px;
 }
 
+
+/* ----------メディアクエリ-------- */
+
+
+@media screen and (max-width: 1070px){
+  #about main section h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #about .about_top_midashi h2 {
+    font-size: 1.7rem;
+  }
+  #about .about_top_midashi h2 span {
+    font-size: 1rem;
+  } 
+
+  #about main section div {
+    width: 80%;
+  }
+  #about main section h1 {
+    font-size: 1.8rem;
+  }
+  #about main section p {
+    font-size: 0.9rem;
+  }
+  #about main section h3 {
+    font-size: 2rem;
+  }
+
+  /* #about main section h1::before {
+    bottom: -655px;
+  } */
+}
