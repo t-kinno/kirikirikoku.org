@@ -71,7 +71,7 @@ html,body{
   font-size: 2.2rem;
   margin: 0;
   letter-spacing: 0.2em;
-  color: #A7C893;
+  color: #A3C2D7;
 }
 #project .project_overview .right {
   width: 50%;
@@ -171,15 +171,15 @@ html,body{
     font-size: 1.5rem;
   }
   #project .project1_midashi {
-    background-image: url('../images/ringyo2-min.JPG');
+    background-image: url('../images/ringyo2-mob.JPG');
     height: 330px;
   }
   #project .project2_midashi {
-    background-image: url('../images/mori_class-min.JPG');
+    background-image: url('../images/mori_class-mob.JPG');
     height: 330px;
   }
   #project .project3_midashi {
-    background-image: url('../images/human_climb-min.jpg');
+    background-image: url('../images/human_climb-mob.jpg');
     height: 330px;
   }
   #project .project_overview .left h3 {
