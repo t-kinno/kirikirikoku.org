@@ -1,0 +1,189 @@
+@charset "UTF-8";
+html,body{
+  font-family: "Yu Mincho";
+  margin: 0;
+  padding: 0;
+}
+#project body {
+  width: 100%;
+  margin: 0;
+}
+#project #project_top {
+  width: 100%;
+  height: 590px;
+  background-size: cover;
+  background-image: url('../images/ringyo-min.jpg');
+  position: relative;
+  background-position: center center;
+}
+#project #project_top::before {
+  content:  "";
+  width:  2px;
+  height: 122px;
+  background: rgba(0, 0, 0, 0.51);
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  z-index: 99;
+}
+#project .logo img {
+  position: absolute;
+  width: 7%;
+  margin: 40px 0 0 30px;
+}
+#project .top_midashi {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+#project .top_midashi h2 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 0.2em;
+  text-shadow: 1px 2px 5px #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#project .top_midashi h2 span {
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.7em;
+}
+/* -------------main------------- */
+#project .project_overview {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  margin: 130px auto 100px;
+}
+#project .project_overview .left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+#project .project_overview .left h3 {
+  font-size: 2.2rem;
+  margin: 0;
+  letter-spacing: 0.2em;
+  color: #A7C893;
+}
+#project .project_overview .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-left: 15px;
+}
+#project .project_overview .right p {
+  margin: 0;
+}
+#project #project_title .left div {
+  display: flex;
+  flex-direction: column;
+}
+#project #project_title .left p {
+  display: inline-block;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 2em;
+  font-size: 1.1rem;
+}
+#project #project_title .left h3 {
+  display: inline-block;
+}
+#project #project_title .left h3 span {
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+}
+#project #project_title .right p {
+  margin-top: 3.3rem;
+}
+#project .project_midashi_image {
+  width: 100%;
+  height: 50vh;
+  min-height: 300px;
+  background-size: cover;
+}
+#project .project1_midashi {
+  background-image: url('../images/ringyo2-min.JPG');
+}
+#project .project2_midashi {
+  background-image: url('../images/mori_class-min.JPG');
+}
+#project .project3_midashi {
+  background-image: url('../images/human_climb-min.JPG');
+}
+#project .project {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#project p {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 2.5em;
+  text-align: left;
+}
+#project p span {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  #project .top_midashi {
+    height: 60vh;
+    min-height: 400px;
+  }
+  #project #project_top {
+    height: auto;
+    background-image: url(../images/ringyo-min-mob.JPG);
+  }
+  #project #project_top::before {
+    display: none;
+  }
+  #project .project_overview {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 90%;
+  }
+  #project .project_overview .left,
+  #project .project_overview .right {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  #project #project_title .left p {
+    font-size: 1.8rem;
+    margin-bottom: 1em;
+  }
+  #project #project_title .left h3 span {
+    font-size: 1.2em;
+  }
+  #project #project_title .left h3 {
+    font-size: 10vw;
+    letter-spacing: 0.1rem;
+    line-height: 1.2;
+  }
+  #project p {
+    font-size: 1.5rem;
+  }
+  #project .project1_midashi {
+    background-image: url('../images/ringyo2-min.JPG');
+    height: 330px;
+  }
+  #project .project2_midashi {
+    background-image: url('../images/mori_class-min.JPG');
+    height: 330px;
+  }
+  #project .project3_midashi {
+    background-image: url('../images/human_climb-min.jpg');
+    height: 330px;
+  }
+  #project .project_overview .left h3 {
+    font-size: 2.8rem;
+    margin-bottom: 70px;
+}
+}

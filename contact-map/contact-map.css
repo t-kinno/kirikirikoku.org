@@ -1,0 +1,58 @@
+/*common_contact*/
+.common_contact{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.common_contact h2{
+  font-size: 1.8rem;
+}
+.common_contact p:first-of-type:before{
+  content: "";
+  width: 170px;
+  height: 1.8px;
+  background: rgba(0,0,0,1);
+  position: absolute;
+  left: 20%;
+  bottom: 55px;
+  z-index: 99;
+}
+.common_contact p{
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+.common_contact p:first-of-type{
+  position: relative;
+  padding-top: 20px;
+}
+.common_contact a{
+  border: 1px solid #000000;
+  padding: 10px 70px ;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  margin-top: 50px;
+  text-decoration: none;
+  transition: 1s;
+}
+.common_contact a:hover{
+  background-color: rgba(205,205,205,1);
+}
+.common_contact p:last-of-type{
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+.common_contact address{
+  margin-top: 50px;
+  font-size: 1.3rem;
+  font-style: normal;
+}
+
+/*common_map*/
+.common_map iframe{
+  width: 100%;
+  margin-bottom: 150px;
+}
