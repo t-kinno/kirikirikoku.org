@@ -133,6 +133,239 @@ html,body{
 #project p span {
   font-size: 1.2rem;
 }
+/*------------------
+ここから#box_wrapper
+------------------*/
+#box_wrapper{
+  width: 100%;
+  height: 100%;
+}
+#box_wrapper a{
+  text-decoration: none;
+  color: #000;
+}
+#box_wrapper .bgc{
+  background: linear-gradient(180deg,rgba(0,0,0,0.4), transparent);
+  width: 100%;
+  /*箱の中に影をつける*/
+  padding: 55px 0;
+}
+/*------------------
+ここから.grid_box
+------------------*/
+#box_wrapper .grid_box{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr)auto;
+  grid-template-rows: 100% 4fr 1fr;
+  grid-auto-rows: 100%;
+}
+#box_wrapper .grid_box p{
+  font-size: 1.1rem;
+}
+#box_wrapper .grid_box >div{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#box_wrapper .grid_box h2{
+  margin: 0;
+  font-size: 1.7rem;
+}
+#box_wrapper .grid_box .title_name{
+  margin: 0 35px;
+  padding-top: 10px;
+}
+/*--------------------------
+ここから.box1,2,3
+----------------------------*/
+#box_wrapper .box1{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-image:url(../images/turituri.jpg) ;
+  color:#fff;
+  height: 400px;
+}
+#box_wrapper .box2{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-image: url(../images/makimk3.jpg);
+  color:#fff;
+  height: 400px;
+}
+
+#box_wrapper .box3{
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 1;
+  background-image: url(../images/hito.jpg);
+  color:#fff;
+  height: 400px;
+}
+/*common_contact*/
+.common_contact{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.common_contact h2{
+  font-size: 1.8rem;
+}
+.common_contact p:first-of-type:before{
+  content: "";
+  width: 170px;
+  height: 1.8px;
+  background: rgba(0,0,0,1);
+  position: absolute;
+  left: 20%;
+  bottom: 55px;
+  z-index: 99;
+}
+.common_contact p{
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+.common_contact p:first-of-type{
+  position: relative;
+  padding-top: 20px;
+}
+.common_contact a{
+  border: 1px solid #000000;
+  padding: 10px 70px ;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  margin-top: 50px;
+  text-decoration: none;
+  transition: 1s;
+}
+.common_contact a:hover{
+  background-color: rgba(205,205,205,1);
+}
+.common_contact p:last-of-type{
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+.common_contact address{
+  margin-top: 50px;
+  font-size: 1.3rem;
+  font-style: normal;
+}
+
+/*common_map*/
+.common_map iframe{
+  width: 100%;
+  margin-bottom: 150px;
+}
+/*-----------------------------------
+    footer
+------------------------------------*/
+#gfoot{
+  background-image:url(../images/mori.png);
+  background-size:cover;
+  background-position:center center;
+  position:relative;
+  font-weight:bold;
+}
+#gfoot::before{
+  content:"";
+  width:1.5px;
+  height:105px;
+  background:rgba(0,0,0,0.4);
+  position:absolute;
+  left:50%;
+  top:-55px;
+  z-index:99;
+}
+#gfoot .back_cover{
+  position:absolute;
+  width: 100%;
+  height:100%;
+  background:rgba(255,255,255,0.8);
+}
+#gfoot .foot_left img{
+  width:70%;
+  margin-top:90px;
+  position: relative;
+}
+#gfoot .foot_center{
+  margin-top:70px;
+  position:relative;
+  right: 75px;
+}
+#gfoot .foot_center a{
+transition: text-shadow .5s;
+}
+#gfoot .foot_center a:hover{
+  text-shadow: 0 4px 4px rgba(0,0,0,0.4);
+
+}
+#gfoot .foot_center .policy{
+  margin:50px 0 50px 0;
+  font-size:0.75rem;
+}
+
+/*--------------------------------------
+  .foot_right
+----------------------------------------*/
+#gfoot .foot_right{
+  margin-top: 100px;
+  position: relative;
+  right:40px;
+}
+#foot_activities{
+  margin:0;
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
+#foot_kirikiri{
+  margin:0;
+  font-size: 3.5rem;
+  padding: 0px 10px;
+}
+#foot_tel{
+  font-size:1.5rem;
+  margin:25px 0 0 0;
+  letter-spacing: 0.3em;
+}
+#foot_reception{
+  margin:0;
+  letter-spacing: 0.1em;
+}
+#foot_post{
+  margin: 30px 0 0 0;
+  letter-spacing: 0.5em;
+}
+#foot_copy{
+  margin-top: 41px;
+  letter-spacing: 0.1em
+}
+#foot_address{
+  margin:0px;
+}
+#foot_address span{
+  letter-spacing: 0.2em;
+}
+/*ここまでfoot_right*/
+#foot_flex{
+  display:flex;
+  justify-content:space-around;
+  position:relative;
+}
+#gfoot a{
+  text-decoration:none;
+  color:black;
+}
+/*--------------------------------------------
+  ここまでfooter
+-----------------------------------------------*/
 @media screen and (max-width: 768px) {
   #project .top_midashi {
     height: 60vh;
@@ -186,4 +419,58 @@ html,body{
     font-size: 2.8rem;
     margin-bottom: 70px;
 }
+}
+/*------------------
+画面を縮めた場合
+--------------------*/
+@media screen and (max-width: 1115px){
+  #box_wrapper .title_name  span{
+      display:flex;
+      flex-wrap:wrap;
+  }
+  #box_wrapper .title_name p .delete{
+      display: none;
+  }
+  #box_wrapper .box2 .bgc {
+      padding: 28px 0;
+  }
+
+}
+
+/*-----------------------------------
+レスポンシブデザイン
+-------------------------------------*/
+@media screen and (max-width: 768px){
+  #box_wrapper .grid_box{
+      display: block; 
+  }
+  #box_wrapper .box1{
+      height: 250px;
+  }
+  #box_wrapper .box2{
+      height: 250px;
+  }
+  #box_wrapper .box3{
+      height: 250px;
+  }
+  #box_wrapper .bgc{
+      padding: 20px 0 0 0;
+  }
+  #box_wrapper .title_name p{
+      display: flex;
+      font-size: 0.9rem;
+  }
+  #box_wrapper .title_name h2{
+      display: flex;
+      font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 330px){
+  #box_wrapper .title_name p{
+      display: block;
+  }
+  #box_wrapper .title_name h2{
+      display: block;
+  }
 }
