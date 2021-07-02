@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+body{
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+    font-size: 1rem;
+    margin: 0;
+}
+p{
+    margin:0;
+}
+*{
+    box-sizing: border-box;
+}
+#box_wrapper{
+    width: 100%;
+}
+/*ここからグリッドボックスの設定*/
+#box_wrapper .grid_box{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr)auto;
+    grid-template-rows: 50% 4fr 1fr;
+    grid-auto-rows: 50%;
+}
+/*グリッドボックスの中の画像の設定*/
+#box_wrapper .grid_box >div{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#box_wrapper .grid_box h2,h3{
+    margin: 0;
+}
+#box_wrapper .grid_box .title_name{
+    margin-left: 40px;
+    padding-top: 30px;
+}
+#box_wrapper .box1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    width: 75%;
+    margin: auto auto;
+    height: 500px;
+}
+#box_wrapper .box1 h2{
+    padding-bottom: 10%;
+}
+#box_wrapper .box1 h3{
+    padding-top: 10%;
+}
+#box_wrapper .box1 p{
+    line-height: 2;
+    overflow-wrap: break-word;
+}
+#box_wrapper .box1 .word::after{
+   content:"";
+   width:calc(100% - 165px);
+   height: 1px;
+   margin-left:10px;
+   display: inline-block;
+   background-color: #707070;
+}
+#box_wrapper .box1 a::before{
+   content:"";
+   width:calc(100% - 75px);
+   height: 1px;
+   margin-right: 10px;
+   display: inline-block;
+   background-color: #707070;
+}
+#box_wrapper a,a::before{
+    transition: text-shadow .5s;
+    text-decoration: none;
+    color: #000;
+}
+#box_wrapper a:hover{
+    text-shadow: 4px 4px 4px  rgb(0 0 0 / 40%);
+}
+/*画像に暗い幕をつける*/
+#box_wrapper .bgc{
+    background: linear-gradient(180deg,rgba(0,0,0,0.4), transparent);
+    width: 100%;
+    height: 100%;
+}
+#box_wrapper .box2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-image:url(../img/box/turituri.jpg) ;
+    color:#fff;
+    height: 300px;
+}
+#box_wrapper .box3{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-image: url(../img/box/makimk3.jpg);
+    color:#fff;
+    height: 300px;
+}
+#box_wrapper .box4{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    background-image: url(../img/box/hito.jpg);
+    color:#fff;
+    height: 300px;
+}
+/*.title_name pの疑似要素設定*/
+#box_wrapper .title_name p::after{
+    content:"";
+    height: 1px;
+    margin-left:10px;
+    display: inline-block;
+    background-color: #fff;
+}
+#box_wrapper .box2 p::after{
+    width: 25%;
+}
+ #box_wrapper .box3 p::after{
+    width:calc(100% - 300px);
+}
+#box_wrapper .box4 p::after{
+    width: 25%;
+}
+
+/*box1の余白と文字段落ちと疑似要素の調整*/
+@media screen and (max-width:915px){
+    #box_wrapper .box1{
+        margin:0 auto;
+    }
+    #box_wrapper .box1 h2{
+        font-size: 1.3rem;
+    }
+    #box_wrapper .title_name p::after{
+        display: none;
+    }
+    #box_wrapper .title_name  span{
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+}
