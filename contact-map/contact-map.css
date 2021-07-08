@@ -12,7 +12,7 @@
 }
 .common_contact p:first-of-type:before{
   content: "";
-  width: 170px;
+  width: 160px;
   height: 1.8px;
   background: #707070;
   position: absolute;
