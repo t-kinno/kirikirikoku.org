@@ -81,19 +81,7 @@ html,body{
   font-size: 2.8rem;
   letter-spacing: 0.2em;
   margin: 125px 0 55px 0;
-  /* position: relative; */
 }
-/* #about main section h1::before {
-  content:  "";
-  width:  2px;
-  height: 220px;
-  background: rgba(0, 0, 0, 0.51);
-  position: absolute;
-  left: 50%;
-  bottom: -580px;
-  z-index: 99;
-  margin-top: 80px;
-} */
 #about main section p {
   font-size: 1.1rem;
   font-weight: bold;
@@ -109,7 +97,7 @@ html,body{
 }
 #about main section h3::before {
   content:  "";
-  width:  100%;
+  width:  191px;
   height: 1px;
   background: rgba(0, 0, 0, 0.51);
   position: absolute;
@@ -119,12 +107,69 @@ html,body{
 #about main section:last-of-type {
   margin-bottom: 250px;
 }
-*{
-  box-sizing: border-box;
+
+
+/* ----------メディアクエリ-------- */
+
+
+@media screen and (max-width: 1070px){
+  #about main section h1 {
+    font-size: 2rem;
+  }
 }
-#box_wrapper{
-  width: 100%;
+
+@media screen and (max-width: 768px){
+  #about #about_top::before {
+    content:  none;
+  }
+
+  #about .about_top_midashi h2 {
+    font-size: 1.7rem;
+  }
+  #about .about_top_midashi h2 span {
+    font-size: 1rem;
+  } 
+
+  #about main section div {
+    width: 80%;
+  }
+  #about main section h1 {
+    font-size: 1.8rem;
+  }
+  #about main section p {
+    font-size: 0.9rem;
+  }
+  #about main section h3 {
+    font-size: 2rem;
+  }
+
+  #about main .first_content::after {
+    height: 190px;
+    bottom: -260px;
+  }
 }
+@media screen and (max-width: 405px){
+  #about main section h1 {
+    font-size: 1.5rem;
+  }#about main .first_content::after {
+    height: 130px;
+    bottom: -205px;
+  }
+  #about main section h3 {
+    font-size: 1.5rem;
+    margin: 280px 0 80px 0;
+  }
+  #about main section h3::before {
+    width:  145px;
+    top: 50px;
+  }
+}
+@media screen and (max-width: 320px){
+  #about main section h1 {
+    font-size: 1.4rem;
+  }
+}
+
 /*ここからグリッドボックスの設定*/
 #box_wrapper .grid_box{
   display:grid;
@@ -200,7 +245,7 @@ html,body{
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 1;
-  background-image:url(../../images/turituri.jpg) ;
+  background-image:url(../img/box/turituri.jpg) ;
   height: 300px;
 }
 #box_wrapper .box3{
@@ -208,7 +253,7 @@ html,body{
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 5;
-  background-image: url(../../images/makimk3.jpg);
+  background-image: url(../img/box/makimk3.jpg);
   height: 300px;
 }
 #box_wrapper .box4{
@@ -216,7 +261,7 @@ html,body{
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 4;
-  background-image: url(../../images/hito.jpg);
+  background-image: url(../img/box/hito.jpg);
   height: 300px;
 }
 /*.title_name pの疑似要素設定*/
@@ -236,157 +281,7 @@ html,body{
 #box_wrapper .box4 p::after{
   width: 25%;
 }
-/*common_contact*/
-.common_contact{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 200px auto 70px;
-}
-.common_contact h2{
-  font-size: 1.8rem;
-}
-.common_contact p:first-of-type:before{
-  content: "";
-  width: 170px;
-  height: 1.8px;
-  background: #707070;
-  position: absolute;
-  left: 20%;
-  bottom: 55px;
-  z-index: 99;
-}
-.common_contact p{
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 0;
-}
-.common_contact p:first-of-type{
-  position: relative;
-  padding-top: 20px;
-}
-.common_contact a{
-  text-align: center;
-  font-size: 1.5rem;
-  color: #000;
-  letter-spacing: 1.5px;
-  text-decoration: none;
-  transition: 1s;
-}
-.common_contact a span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.common_contact .contact_btn {
-  display: inline-block;
-  position: relative;
-  width: 430px;
-  height: 60px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.common_contact .contact_btn::before,
-.common_contact .contact_btn::after {
-  content: "";
-  width: 440px;
-  height: 70px;
-  position: absolute;
-}
-.common_contact .contact_btn::before {
-  top: 0;
-  left: 0;
-  border-top: #000 1px solid;
-  border-left: #000 1px solid;
-}
-.common_contact .contact_btn::after {
-  bottom: 0;
-  right: 0;
-  border-bottom: #000 1px solid;
-  border-right: #000 1px solid;
-}
-.common_contact .contact_btn:hover{
-  background-color: rgba(205,205,205,1);
-}
-.common_contact p:last-of-type{
-  font-size: 0.8rem;
-  margin-bottom: 20px;
-}
-.common_contact address{
-  margin-top: 50px;
-  font-size: 1.3rem;
-  font-style: normal;
-}
 
-/*common_map*/
-.common_map iframe{
-  width: 100%;
-  margin-bottom: 150px;
-}
-/* ----------メディアクエリ-------- */
-
-
-@media screen and (max-width: 1070px){
-  #about main section h1 {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 768px){
-  #about #about_top::before {
-    content:  none;
-  }
-
-  #about .about_top_midashi h2 {
-    font-size: 1.7rem;
-  }
-  #about .about_top_midashi h2 span {
-    font-size: 1rem;
-  } 
-
-  #about main section div {
-    width: 80%;
-  }
-  #about main section h1 {
-    font-size: 1.8rem;
-  }
-  #about main section p {
-    font-size: 0.9rem;
-  }
-  #about main section h3 {
-    font-size: 2rem;
-    display: inline-block;
-  }
-
-  #about main .first_content::after {
-    height: 190px;
-    bottom: -260px;
-  }
-}
-@media screen and (max-width: 405px){
-  #about main section h1 {
-    font-size: 1.5rem;
-  }#about main .first_content::after {
-    height: 130px;
-    bottom: -205px;
-  }
-  #about main section h3 {
-    font-size: 1.5rem;
-    margin: 280px 0 80px 0;
-  }
-  #about main section h3::before {
-    width:  145px;
-    top: 50px;
-  }
-}
-@media screen and (max-width: 320px){
-  #about main section h1 {
-    font-size: 1.4rem;
-  }
-}
 /*box1の余白と文字段落ちと疑似要素の調整*/
 @media screen and (max-width:915px){
   #box_wrapper .box1{
@@ -403,4 +298,158 @@ html,body{
       flex-wrap:wrap;
   }
 
+}
+/*common_contact*/
+.common_contact{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.common_contact h2{
+  font-size: 1.8rem;
+}
+.common_contact p:first-of-type:before{
+  content: "";
+  width: 170px;
+  height: 1.8px;
+  background: rgba(0,0,0,1);
+  position: absolute;
+  left: 20%;
+  bottom: 55px;
+  z-index: 99;
+}
+.common_contact p{
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+.common_contact p:first-of-type{
+  position: relative;
+  padding-top: 20px;
+}
+.common_contact a{
+  border: 1px solid #000000;
+  padding: 10px 70px ;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  margin-top: 50px;
+  text-decoration: none;
+  transition: 1s;
+}
+.common_contact a:hover{
+  background-color: rgba(205,205,205,1);
+}
+.common_contact p:last-of-type{
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+.common_contact address{
+  margin-top: 50px;
+  font-size: 1.3rem;
+  font-style: normal;
+}
+/*common_map*/
+.common_map iframe{
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+#gfoot{
+  background-image:url(../image/footer/mori.png);
+  background-size:cover;
+  background-position:center center;
+  position:relative;
+  font-weight:bold;
+}
+#gfoot::before{
+  content:"";
+  width:1.5px;
+  height:105px;
+  background:rgba(0,0,0,0.4);
+  position:absolute;
+  left:50%;
+  top:-55px;
+  z-index:99;
+}
+#gfoot .back_cover{
+  position:absolute;
+  width: 100%;
+  height:100%;
+  background:rgba(255,255,255,0.8);
+}
+#gfoot .foot_left img{
+  width:70%;
+  margin-top:90px;
+  position: relative;
+}
+#gfoot .foot_center{
+  margin-top:70px;
+  position:relative;
+  right: 75px;
+}
+#gfoot .foot_center a{
+transition: text-shadow .5s;
+}
+#gfoot .foot_center a:hover{
+  text-shadow: 0 4px 4px rgba(0,0,0,0.4);
+
+}
+#gfoot .foot_center .policy{
+  margin:50px 0 50px 0;
+  font-size:0.75rem;
+}
+
+/*--------------------------------------
+  .foot_right
+----------------------------------------*/
+#gfoot .foot_right{
+  margin-top: 100px;
+  position: relative;
+  right:40px;
+}
+#gfoot #foot_activities{
+  margin:0;
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
+#gfoot #foot_kirikiri{
+  margin:0;
+  font-size: 3.5rem;
+  padding: 0px 10px;
+}
+#gfoot #foot_tel{
+  font-size:1.5rem;
+  margin:25px 0 0 0;
+  letter-spacing: 0.3em;
+}
+#gfoot #foot_reception{
+  margin:0;
+  letter-spacing: 0.1em;
+}
+#gfoot #foot_post{
+  margin: 30px 0 0 0;
+  letter-spacing: 0.5em;
+}
+#gfoot #foot_copy{
+  margin-top: 41px;
+  letter-spacing: 0.1em
+}
+#gfoot #foot_address{
+  margin:0px;
+}
+#gfoot #foot_address span{
+  letter-spacing: 0.2em;
+}
+/*ここまでfoot_right*/
+#gfoot #foot_flex{
+  display:flex;
+  justify-content:space-around;
+  position:relative;
+}
+#gfoot a{
+  text-decoration:none;
+  color:black;
 }
