@@ -20,7 +20,7 @@ html,body{
   content:  "";
   width:  2px;
   height: 122px;
-  background: linear-gradient(#fff 50%,#000 50%);
+  background: linear-gradient(#fff 50%,rgba(0, 0, 0, 0.51) 50%);
   position: absolute;
   left: 50%;
   bottom: -60px;
@@ -31,7 +31,7 @@ html,body{
   width: 7%;
   margin: 40px 0 0 30px;
 }
-#project .top_midashi {
+#project .top_daimei {
   width: 100%;
   height: 100%;
   display: flex;
@@ -39,7 +39,7 @@ html,body{
   align-items: center;
   color: #fff;
 }
-#project .top_midashi h2 {
+#project .top_daimei h2 {
   margin: 0;
   font-size: 2.2rem;
   letter-spacing: 0.2em;
@@ -48,7 +48,7 @@ html,body{
   flex-wrap: wrap;
   justify-content: center;
 }
-#project .top_midashi h2 span {
+#project .top_daimei h2 span {
   font-size: 1.5rem;
   width: 100%;
   text-align: center;
@@ -95,6 +95,7 @@ html,body{
 }
 #project #project_title .left h3 {
   display: inline-block;
+  text-align: center;
 }
 #project #project_title .left h3 span {
   font-size: 1.5em;
@@ -103,20 +104,17 @@ html,body{
 #project #project_title .right p {
   margin-top: 3.3rem;
 }
-#project .project_midashi_image {
+#project .project_daimei_image {
   width: 100%;
   height: 50vh;
   min-height: 300px;
   background-size: cover;
 }
-#project .project1_midashi {
-  background-image: url('../images/maki-min.jpg');
-}
-#project .project2_midashi {
-  background-image: url('../images/ringyo-min.jpg');
-}
-#project .project3_midashi {
-  background-image: url('../images/yamamaki-min.jpg');
+#project .project_daimei_image img {
+  width: 100%;
+  height: 50vh;
+  min-height: 300px;
+  object-fit: cover;
 }
 #project .project {
   width: 100%;
@@ -342,9 +340,8 @@ html,body{
   width: 100%;
   margin-bottom: 150px;
 }
-
 @media screen and (max-width: 768px) {
-  #project .top_midashi {
+  #project .top_daimei {
     height: 60vh;
     min-height: 400px;
   }
@@ -380,18 +377,10 @@ html,body{
   #project p {
     font-size: 1.5rem;
   }
-  #project .project1_midashi {
-    background-image: url('../images/maki-min-mob.jpg');
+  #project .project_daimei_image img,
+  #project .project_daimei_image {
     height: 330px;
-  }
-  #project .project2_midashi {
-    background-image: url('../images/ringyo-min-mob.jpg');
-    height: 330px;
-  }
-  #project .project3_midashi {
-    background-image: url('../images/yamamaki-min-mob.jpg');
-    height: 330px;
-  }
+}
   #project .project_overview .left h3 {
     font-size: 2.8rem;
     margin-bottom: 70px;

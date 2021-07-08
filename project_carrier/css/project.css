@@ -20,7 +20,7 @@ html,body{
   content:  "";
   width:  2px;
   height: 122px;
-  background: rgba(0, 0, 0, 0.51);
+  background:  linear-gradient(#fff 50%,rgba(0, 0, 0, 0.51) 50%);
   position: absolute;
   left: 50%;
   bottom: -60px;
