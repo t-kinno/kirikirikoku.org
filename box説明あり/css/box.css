@@ -33,6 +33,7 @@ p{
 #box_wrapper .grid_box .title_name{
     margin-left: 40px;
     padding-top: 30px;
+    color: #fff;
 }
 #box_wrapper .box1{
     grid-column-start: 1;
@@ -89,7 +90,6 @@ p{
     grid-row-start: 1;
     grid-row-end: 1;
     background-image:url(../img/box/turituri.jpg) ;
-    color:#fff;
     height: 300px;
 }
 #box_wrapper .box3{
@@ -98,7 +98,6 @@ p{
     grid-row-start: 2;
     grid-row-end: 5;
     background-image: url(../img/box/makimk3.jpg);
-    color:#fff;
     height: 300px;
 }
 #box_wrapper .box4{
@@ -107,7 +106,6 @@ p{
     grid-row-start: 4;
     grid-row-end: 4;
     background-image: url(../img/box/hito.jpg);
-    color:#fff;
     height: 300px;
 }
 /*.title_name pの疑似要素設定*/
