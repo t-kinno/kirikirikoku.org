@@ -11,17 +11,16 @@ html,body{
 #activity #activity_top {
   width: 100%;
   height: 60vh;
-  background-image: url(../images/bob1213pb2101110567.jpg);
   background-size: cover;
   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-                    url('../images/activ_top.jpg');
+                    url('../../images/activity_top.JPG');
   position: relative;
 }
 #activity #activity_top::before {
   content:  "";
   width:  2px;
   height: 122px;
-  background: rgba(0, 0, 0, 0.51);
+  background: linear-gradient(#fff 50%,rgba(0, 0, 0, 0.51) 50%);
   position: absolute;
   left: 50%;
   bottom: -60px;
@@ -210,7 +209,6 @@ html,body{
 #box_wrapper .box4 p::after{
   width: 25%;
 }
-
 /*box1の余白と文字段落ちと疑似要素の調整*/
 @media screen and (max-width:915px){
   #box_wrapper .box1{
@@ -226,26 +224,24 @@ html,body{
       display:flex;
       flex-wrap:wrap;
   }
-
 }
-
-/*contact-map css*/
+/*common_contact*/
 .common_contact{
   width: 100%;
-  height: 80vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin: 200px auto 70px;
 }
 .common_contact h2{
   font-size: 1.8rem;
 }
 .common_contact p:first-of-type:before{
   content: "";
-  width: 170px;
+  width: 160px;
   height: 1.8px;
-  background: rgba(0,0,0,1);
+  background: #707070;
   position: absolute;
   left: 20%;
   bottom: 55px;
@@ -261,15 +257,47 @@ html,body{
   padding-top: 20px;
 }
 .common_contact a{
-  border: 1px solid #000000;
-  padding: 10px 70px ;
-  font-size: 1.2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000;
   letter-spacing: 1.5px;
-  margin-top: 50px;
   text-decoration: none;
   transition: 1s;
 }
-.common_contact a:hover{
+.common_contact a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.common_contact .contact_btn {
+  display: inline-block;
+  position: relative;
+  width: 430px;
+  height: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.common_contact .contact_btn::before,
+.common_contact .contact_btn::after {
+  content: "";
+  width: 440px;
+  height: 70px;
+  position: absolute;
+}
+.common_contact .contact_btn::before {
+  top: 0;
+  left: 0;
+  border-top: #000 1px solid;
+  border-left: #000 1px solid;
+}
+.common_contact .contact_btn::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: #000 1px solid;
+  border-right: #000 1px solid;
+}
+.common_contact .contact_btn:hover{
   background-color: rgba(205,205,205,1);
 }
 .common_contact p:last-of-type{
@@ -286,103 +314,4 @@ html,body{
 .common_map iframe{
   width: 100%;
   margin-bottom: 150px;
-}
-
-/*footer*/
-
-#gfoot{
-  background-image:url(../image/footer/mori.png);
-  background-size:cover;
-  background-position:center center;
-  position:relative;
-  font-weight:bold;
-}
-#gfoot::before{
-  content:"";
-  width:1.5px;
-  height:105px;
-  background:rgba(0,0,0,0.4);
-  position:absolute;
-  left:50%;
-  top:-55px;
-  z-index:99;
-}
-#gfoot .back_cover{
-  position:absolute;
-  width: 100%;
-  height:100%;
-  background:rgba(255,255,255,0.8);
-}
-#gfoot .foot_left img{
-  width:70%;
-  margin-top:90px;
-  position: relative;
-}
-#gfoot .foot_center{
-  margin-top:70px;
-  position:relative;
-  right: 75px;
-}
-#gfoot .foot_center a{
-transition: text-shadow .5s;
-}
-#gfoot .foot_center a:hover{
-  text-shadow: 0 4px 4px rgba(0,0,0,0.4);
-
-}
-#gfoot .foot_center .policy{
-  margin:50px 0 50px 0;
-  font-size:0.75rem;
-}
-
-/*--------------------------------------
-  .foot_right
-----------------------------------------*/
-#gfoot .foot_right{
-  margin-top: 100px;
-  position: relative;
-  right:40px;
-}
-#gfoot #foot_activities{
-  margin:0;
-  font-size: 1.5rem;
-  padding: 0 10px;
-}
-#gfoot #foot_kirikiri{
-  margin:0;
-  font-size: 3.5rem;
-  padding: 0px 10px;
-}
-#gfoot #foot_tel{
-  font-size:1.5rem;
-  margin:25px 0 0 0;
-  letter-spacing: 0.3em;
-}
-#gfoot #foot_reception{
-  margin:0;
-  letter-spacing: 0.1em;
-}
-#gfoot #foot_post{
-  margin: 30px 0 0 0;
-  letter-spacing: 0.5em;
-}
-#gfoot #foot_copy{
-  margin-top: 41px;
-  letter-spacing: 0.1em
-}
-#gfoot #foot_address{
-  margin:0px;
-}
-#gfoot #foot_address span{
-  letter-spacing: 0.2em;
-}
-/*ここまでfoot_right*/
-#gfoot #foot_flex{
-  display:flex;
-  justify-content:space-around;
-  position:relative;
-}
-#gfoot a{
-  text-decoration:none;
-  color:black;
 }
