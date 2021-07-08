@@ -12,7 +12,7 @@ html,body{
   width: 100%;
   height: 590px;
   background-size: cover;
-  background-image: url('../images/tree_climb-min.jpg');
+  background-image: url('../../images/tree_climb-min.jpg');
   position: relative;
   background-position: center center;
 }
@@ -156,6 +156,7 @@ html,body{
 #box_wrapper .grid_box .title_name{
   margin-left: 40px;
   padding-top: 30px;
+  color: #fff;
 }
 #box_wrapper .box1{
   grid-column-start: 1;
@@ -211,8 +212,7 @@ html,body{
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 1;
-  background-image:url(../images/turituri.jpg) ;
-  color:#fff;
+  background-image:url(../../images/turituri.jpg) ;
   height: 300px;
 }
 #box_wrapper .box3{
@@ -220,8 +220,7 @@ html,body{
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 5;
-  background-image: url(../images/makimk3.jpg);
-  color:#fff;
+  background-image: url(../../images/makimk3.jpg);
   height: 300px;
 }
 #box_wrapper .box4{
@@ -229,8 +228,7 @@ html,body{
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 4;
-  background-image: url(../images/hito.jpg);
-  color:#fff;
+  background-image: url(../../images/hito.jpg);
   height: 300px;
 }
 /*.title_name pの疑似要素設定*/
