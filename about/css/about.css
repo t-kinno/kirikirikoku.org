@@ -109,7 +109,7 @@ html,body{
 }
 #about main section h3::before {
   content:  "";
-  width:  191px;
+  width:  100%;
   height: 1px;
   background: rgba(0, 0, 0, 0.51);
   position: absolute;
@@ -153,6 +153,7 @@ html,body{
   }
   #about main section h3 {
     font-size: 2rem;
+    display: inline-block;
   }
 
   #about main .first_content::after {
