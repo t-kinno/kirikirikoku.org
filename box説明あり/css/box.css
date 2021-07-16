@@ -86,13 +86,21 @@ p{
 }
 #box_wrapper .box2{
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 1;
     background-image:url(../img/box/turituri.jpg) ;
     height: 300px;
 }
 #box_wrapper .box3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-image: url(../img/box/makimk3.jpg);
+    height: 300px;
+}
+#box_wrapper .box4{
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -100,7 +108,7 @@ p{
     background-image: url(../img/box/makimk3.jpg);
     height: 300px;
 }
-#box_wrapper .box4{
+#box_wrapper .box5{
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 4;
