@@ -105,7 +105,7 @@ p{
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 5;
-    background-image: url(../img/box/makimk3.jpg);
+    background-image: url(../img/box/hito.jpg);
     height: 300px;
 }
 #box_wrapper .box5{
@@ -113,7 +113,7 @@ p{
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 4;
-    background-image: url(../img/box/hito.jpg);
+    background-image: url(../img/box/kouryu.jpg);
     height: 300px;
 }
 /*.title_name pの疑似要素設定*/
@@ -150,4 +150,36 @@ p{
         flex-wrap:wrap;
     }
 
+}
+
+@media screen and (max-width: 768px){
+    #box_wrapper .grid_box{
+        display: block; 
+    }
+    #box_wrapper .box1{
+        display: none;
+    }
+    #box_wrapper .box2{
+        height: 250px;
+    }
+    #box_wrapper .box3{
+        height: 250px;
+    }
+    #box_wrapper .box4{
+        height:250px;
+    }
+    #box_wrapper .box5{
+        height:250px;
+    }
+    #box_wrapper .bgc{
+        padding: 20px 0 0 0;
+    }
+    #box_wrapper .title_name p{
+        display: flex;
+        font-size: 0.9rem;
+    }
+    #box_wrapper .title_name h2{
+        display: flex;
+        font-size: 1.4rem;
+    }
 }
