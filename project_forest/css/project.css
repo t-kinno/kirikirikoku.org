@@ -11,7 +11,6 @@ html,body{
 #project #project_top {
   width: 100%;
   height: 590px;
-  background-size: cover;
   position: relative;
   background-position: center center;
 }
@@ -31,6 +30,8 @@ html,body{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  object-fit: cover;
+  width: 100%;
 }
 #project .logo img {
   position: absolute;
