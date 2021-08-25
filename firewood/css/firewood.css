@@ -42,6 +42,7 @@ body{
 #firewood_main .element p{
     line-height: 2rem;
     letter-spacing: 0.04rem;
+    margin: 0;
 }
 #firewood_main .element::after{
     content:"";
@@ -108,13 +109,64 @@ body{
     background:#333;
     color: #fff;
 }
-
 /*幅が狭まった時*/
 @media screen and (max-width: 918px){
     #firewood_main .img_box img {
         width:100%;
         height: auto;
     }
+}
+/*常時表示しないもの*/
+@media screen and (min-width: 768px){
+  #firewood_main #appear{
+  display: none;
+  }
+  #firewood_main #appear .container_appear{
+  display: none;
+  }
+}
+@media screen and (max-width: 768px){
+  #firewood_main{
+    width: auto;
+  }
+  #firewood_main .element{
+    width: auto;
+    margin-bottom: 50px;
+  }
+  #firewood_main .element::after{
+    display: none;
+  }
+  #firewood_main .firewood_midashi h2{
+    margin-top: 150px;
+  }
+  #firewood_main #variable{
+    width:80%;
+    margin: auto;
+    letter-spacing: 0.05px;
+    line-height: 2rem;
+  }
+  #firewood_main #appear{
+    margin:auto;
+    width:80%;
+  }
+  #firewood_main #appear .container_appear{
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+  }
+  #firewood_main #appear .container_appear h3{
+    display: inline-block;
+    border-bottom: solid 1px #000;
+  }
+  #firewood_main .container{
+    display: none;
+  }
+  #firewood_main .container .notice{
+    display: none;
+  }
+  #firewood_main .p_box{
+    display: none;
+  }
 }
 
 /*common_contact*/
