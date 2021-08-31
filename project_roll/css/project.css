@@ -11,8 +11,6 @@ html,body{
 #project #project_top {
   width: 100%;
   height: 590px;
-  background-size: cover;
-  background-image: url('../../images/roll1-min.JPG');
   position: relative;
   background-position: center center;
 }
@@ -25,6 +23,15 @@ html,body{
   left: 50%;
   bottom: -60px;
   z-index: 99;
+}
+#project #project_top > img {
+  position: absolute;
+  height: 590px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  object-fit: cover;
+  width: 100%;
 }
 #project .logo img {
   position: absolute;
@@ -81,10 +88,6 @@ html,body{
 }
 #project .project_overview .right p {
   margin: 0;
-}
-#project #project_title .left div {
-  display: flex;
-  flex-direction: column;
 }
 #project #project_title .left p {
   display: inline-block;

@@ -79,7 +79,7 @@ html,body{
   font-size: 2.2rem;
   margin: 0;
   letter-spacing: 0.2em;
-  color: #008CC2;
+  color: #A7C893;
 }
 #project .project_overview .right {
   width: 50%;
@@ -89,6 +89,10 @@ html,body{
 }
 #project .project_overview .right p {
   margin: 0;
+}
+#project #project_title .left div {
+  display: flex;
+  flex-direction: column;
 }
 #project #project_title .left p {
   display: inline-block;
@@ -100,9 +104,10 @@ html,body{
 #project #project_title .left h3 {
   display: inline-block;
   text-align: center;
+  margin-top: 3.3rem;
 }
 #project #project_title .left h3 span {
-  font-size: 1.1em;
+  font-size: 1.5em;
   letter-spacing: 0.2em;
 }
 #project #project_title .right p {
