@@ -13,7 +13,7 @@ html,body{
   height: 60vh;
   background-size: cover;
   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-                    url('../../images/activity_top.JPG');
+                    url('../../images/activ_top.jpg');
   position: relative;
 }
 #activity #activity_top::before {
@@ -98,7 +98,7 @@ html,body{
   margin-bottom: 1.25em;
 }
 
-/*box css*/
+/*ここからグリッドボックスの設定*/
 #box_wrapper .grid_box{
   display:grid;
   grid-template-columns: repeat(3, 1fr)auto;
@@ -170,26 +170,34 @@ html,body{
 }
 #box_wrapper .box2{
   grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
   background-image:url(../images/turituri.jpg) ;
   height: 300px;
 }
 #box_wrapper .box3{
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
   background-image: url(../images/makimk3.jpg);
   height: 300px;
 }
 #box_wrapper .box4{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  background-image: url(../images/hito.jpg);
+  height: 300px;
+}
+#box_wrapper .box5{
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 4;
-  background-image: url(../images/hito.jpg);
+  background-image: url(../images/kouryu.jpg);
   height: 300px;
 }
 /*.title_name pの疑似要素設定*/
@@ -209,6 +217,7 @@ html,body{
 #box_wrapper .box4 p::after{
   width: 25%;
 }
+
 /*box1の余白と文字段落ちと疑似要素の調整*/
 @media screen and (max-width:915px){
   #box_wrapper .box1{
@@ -223,6 +232,39 @@ html,body{
   #box_wrapper .title_name  span{
       display:flex;
       flex-wrap:wrap;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  #box_wrapper .grid_box{
+      display: block; 
+  }
+  #box_wrapper .box1{
+      display: none;
+  }
+  #box_wrapper .box2{
+      height: 250px;
+  }
+  #box_wrapper .box3{
+      height: 250px;
+  }
+  #box_wrapper .box4{
+      height:250px;
+  }
+  #box_wrapper .box5{
+      height:250px;
+  }
+  #box_wrapper .bgc{
+      padding: 20px 0 0 0;
+  }
+  #box_wrapper .title_name p{
+      display: flex;
+      font-size: 0.9rem;
+  }
+  #box_wrapper .title_name h2{
+      display: flex;
+      font-size: 1.4rem;
   }
 }
 /*common_contact*/
