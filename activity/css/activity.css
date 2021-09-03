@@ -8,6 +8,12 @@ html,body{
   width: 100%;
   margin: 0;
 }
+#activity p {
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 2.5em;
+  text-align: left;
+}
 #activity #activity_top {
   width: 100%;
   height: 60vh;
@@ -65,6 +71,13 @@ html,body{
   flex-wrap: wrap;
   width: 80%;
   margin: auto;
+}
+#activity #activity_decription .activity_center {
+  text-align: center;
+  width: 100%;
+}
+#activity #activity_decription .activity_center p {
+  text-align: center;
 }
 #activity #activity_decription .activity_left {
   width: 55%;
