@@ -146,6 +146,67 @@ html,body{
 #box_wrapper{
   width: 100%;
 }
+/* ----------メディアクエリ-------- */
+
+
+@media screen and (max-width: 1070px){
+  #about main section h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #about #about_top::before {
+    content:  none;
+  }
+
+  #about .about_top_midashi h2 {
+    font-size: 2.5rem;
+  }
+  #about .about_top_midashi h2 span {
+    font-size: 1.8rem;
+  } 
+
+  #about main section div {
+    width: 80%;
+  }
+  #about main section h1 {
+    font-size: 2.2rem;
+  }
+  #about main section p {
+    font-size: 1.3rem;
+  }
+  #about main section h3 {
+    font-size: 2rem;
+  }
+
+  #about main .first_content::after {
+    height: 190px;
+    bottom: -260px;
+  }
+}
+@media screen and (max-width: 405px){
+  #about main section h1 {
+    font-size: 1.5rem;
+  }#about main .first_content::after {
+    height: 130px;
+    bottom: -205px;
+  }
+  #about main section h3 {
+    font-size: 1.5rem;
+    margin: 280px 0 80px 0;
+  }
+  #about main section h3::before {
+    width:  145px;
+    top: 50px;
+  }
+}
+@media screen and (max-width: 320px){
+  #about main section h1 {
+    font-size: 1.4rem;
+  }
+}
+
 /*ここからグリッドボックスの設定*/
 #box_wrapper .grid_box{
   display:grid;
@@ -221,7 +282,7 @@ html,body{
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
-  background-image:url(../images/turituri.jpg) ;
+  background-image:url(../../images/turituri.jpg) ;
   height: 300px;
 }
 #box_wrapper .box3{
@@ -229,7 +290,7 @@ html,body{
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 1;
-  background-image: url(../images/makimk3.jpg);
+  background-image: url(../../images/makimk3.jpg);
   height: 300px;
 }
 #box_wrapper .box4{
@@ -237,7 +298,7 @@ html,body{
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 5;
-  background-image: url(../images/hito.jpg);
+  background-image: url(../../images/hito.jpg);
   height: 300px;
 }
 #box_wrapper .box5{
@@ -245,7 +306,7 @@ html,body{
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 4;
-  background-image: url(../images/kouryu.jpg);
+  background-image: url(../../images/kouryu.jpg);
   height: 300px;
 }
 /*.title_name pの疑似要素設定*/
@@ -282,6 +343,38 @@ html,body{
       flex-wrap:wrap;
   }
 
+}
+
+@media screen and (max-width: 768px){
+  #box_wrapper .grid_box{
+      display: block; 
+  }
+  #box_wrapper .box1{
+      display: none;
+  }
+  #box_wrapper .box2{
+      height: 250px;
+  }
+  #box_wrapper .box3{
+      height: 250px;
+  }
+  #box_wrapper .box4{
+      height:250px;
+  }
+  #box_wrapper .box5{
+      height:250px;
+  }
+  #box_wrapper .bgc{
+      padding: 20px 0 0 0;
+  }
+  #box_wrapper .title_name p{
+      display: flex;
+      font-size: 0.9rem;
+  }
+  #box_wrapper .title_name h2{
+      display: flex;
+      font-size: 1.6rem;
+  }
 }
 
 /*common_contact*/
@@ -374,13 +467,21 @@ html,body{
   width: 100%;
   margin-bottom: 150px;
 }
+
+/* forestレスポンシブ */
+
 @media screen and (max-width: 768px) {
+  #project p {
+    font-size: 1.5rem;
+  }
   #project .top_daimei {
     height: 60vh;
     min-height: 400px;
   }
   #project #project_top {
     height: auto;
+  }
+  #project #project_top > img {
     background-image: url(../images/tree_climb-mob-min.jpg);
   }
   #project #project_top::before {
@@ -400,6 +501,9 @@ html,body{
     font-size: 1.8rem;
     margin-bottom: 1em;
   }
+  #project #project_title .right p {
+    letter-spacing: 0.08rem;
+  }
   #project #project_title .left h3 span {
     font-size: 1.2em;
   }
@@ -407,9 +511,6 @@ html,body{
     font-size: 10vw;
     letter-spacing: 0.1rem;
     line-height: 1.2;
-  }
-  #project p {
-    font-size: 1.5rem;
   }
   #project .project_daimei_image img,
   #project .project_daimei_image {
