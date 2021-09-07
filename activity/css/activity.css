@@ -72,13 +72,6 @@ html,body{
   width: 80%;
   margin: auto;
 }
-#activity #activity_decription .activity_center {
-  text-align: center;
-  width: 100%;
-}
-#activity #activity_decription .activity_center p {
-  text-align: center;
-}
 #activity #activity_decription .activity_left {
   width: 55%;
 }
