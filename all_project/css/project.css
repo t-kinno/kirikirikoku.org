@@ -55,12 +55,12 @@ html,body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  line-height: 2;
 }
 #project .top_daimei h2 span {
   font-size: 1.5rem;
   width: 100%;
   text-align: center;
-  margin-bottom: 0.7em;
 }
 /* -------------main------------- */
 #project .project_overview {
@@ -475,14 +475,13 @@ html,body{
     font-size: 1.5rem;
   }
   #project .top_daimei {
-    height: 60vh;
+    height: 66vh;
     min-height: 400px;
-  }
-  #project #project_top {
-    height: auto;
   }
   #project #project_top > img {
     background-image: url(../images/tree_climb-mob-min.jpg);
+    height: 800px;
+    object-fit: cover;
   }
   #project #project_top::before {
     display: none;
@@ -508,9 +507,10 @@ html,body{
     font-size: 1.2em;
   }
   #project #project_title .left h3 {
-    font-size: 10vw;
+    font-size: 6vw;
     letter-spacing: 0.1rem;
-    line-height: 1.2;
+    line-height: 1.5;
+    margin-bottom: 0;
   }
   #project .project_daimei_image img,
   #project .project_daimei_image {
@@ -519,5 +519,6 @@ html,body{
   #project .project_overview .left h3 {
     font-size: 2.8rem;
     margin-bottom: 70px;
+    line-height: 1.5;
 }
 }
