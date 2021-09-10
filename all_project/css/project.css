@@ -327,56 +327,6 @@ html,body{
   width: 25%;
 }
 
-/*box1の余白と文字段落ちと疑似要素の調整*/
-@media screen and (max-width:915px){
-  #box_wrapper .box1{
-      margin:0 auto;
-  }
-  #box_wrapper .box1 h2{
-      font-size: 1.3rem;
-  }
-  #box_wrapper .title_name p::after{
-      display: none;
-  }
-  #box_wrapper .title_name  span{
-      display:flex;
-      flex-wrap:wrap;
-  }
-
-}
-
-@media screen and (max-width: 768px){
-  #box_wrapper .grid_box{
-      display: block; 
-  }
-  #box_wrapper .box1{
-      display: none;
-  }
-  #box_wrapper .box2{
-      height: 250px;
-  }
-  #box_wrapper .box3{
-      height: 250px;
-  }
-  #box_wrapper .box4{
-      height:250px;
-  }
-  #box_wrapper .box5{
-      height:250px;
-  }
-  #box_wrapper .bgc{
-      padding: 20px 0 0 0;
-  }
-  #box_wrapper .title_name p{
-      display: flex;
-      font-size: 0.9rem;
-  }
-  #box_wrapper .title_name h2{
-      display: flex;
-      font-size: 1.6rem;
-  }
-}
-
 /*common_contact*/
 .common_contact{
   width: 100%;
@@ -468,20 +418,75 @@ html,body{
   margin-bottom: 150px;
 }
 
+/*box1の余白と文字段落ちと疑似要素の調整*/
+@media screen and (max-width:915px){
+  #box_wrapper .box1{
+      margin:0 auto;
+  }
+  #box_wrapper .box1 h2{
+      font-size: 1.3rem;
+  }
+  #box_wrapper .title_name p::after{
+      display: none;
+  }
+  #box_wrapper .title_name  span{
+      display:flex;
+      flex-wrap:wrap;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  #box_wrapper .grid_box{
+      display: block; 
+  }
+  #box_wrapper .box1{
+      display: none;
+  }
+  #box_wrapper .box2{
+      height: 250px;
+  }
+  #box_wrapper .box3{
+      height: 250px;
+  }
+  #box_wrapper .box4{
+      height:250px;
+  }
+  #box_wrapper .box5{
+      height:250px;
+  }
+  #box_wrapper .bgc{
+      padding: 20px 0 0 0;
+  }
+  #box_wrapper .title_name p{
+      display: flex;
+      font-size: 0.9rem;
+  }
+  #box_wrapper .title_name h2{
+      display: flex;
+      font-size: 1.6rem;
+  }
+}
+
+
+/* contactレスポンシブ */
+@media screen and (max-width: 768px) {
+  .common_contact .contact_btn::before,
+.common_contact .contact_btn::after {
+  width: 440px;
+}
+}
+
+
 /* forestレスポンシブ */
 
 @media screen and (max-width: 768px) {
   #project p {
-    font-size: 1.5rem;
+    font-size: 3.5vw;
   }
   #project .top_daimei {
     height: 66vh;
     min-height: 400px;
-  }
-  #project #project_top > img {
-    background-image: url(../images/tree_climb-mob-min.jpg);
-    height: 800px;
-    object-fit: cover;
   }
   #project #project_top::before {
     display: none;
@@ -501,7 +506,7 @@ html,body{
     margin-bottom: 1em;
   }
   #project #project_title .right p {
-    letter-spacing: 0.08rem;
+    letter-spacing: 0.2vw;
   }
   #project #project_title .left h3 span {
     font-size: 1.2em;
@@ -514,10 +519,10 @@ html,body{
   }
   #project .project_daimei_image img,
   #project .project_daimei_image {
-    height: 330px;
+    height: 25vh;
 }
   #project .project_overview .left h3 {
-    font-size: 2.8rem;
+    font-size: 6vw;
     margin-bottom: 70px;
     line-height: 1.5;
 }
