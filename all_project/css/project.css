@@ -489,9 +489,11 @@ html,body{
   #project p {
     font-size: 3.5vw;
   }
-  #project .top_daimei {
+  #project #project_top {
     height: 66vh;
-    min-height: 400px;
+  }
+  #project #project_top img {
+    height: 66vh;
   }
   #project #project_top::before {
     display: none;
