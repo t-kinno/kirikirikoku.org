@@ -368,6 +368,7 @@ html,body{
 }
 .common_contact a span {
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -471,9 +472,13 @@ html,body{
 
 /* contactレスポンシブ */
 @media screen and (max-width: 768px) {
+  .common_contact .contact_btn {
+    width: 70%;
+    min-width: 330px;
+}
   .common_contact .contact_btn::before,
-.common_contact .contact_btn::after {
-  width: 440px;
+  .common_contact .contact_btn::after {
+    width: 103%;
 }
 }
 
