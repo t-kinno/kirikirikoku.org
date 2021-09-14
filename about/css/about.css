@@ -107,68 +107,6 @@ html,body{
   margin-bottom: 250px;
 }
 
-
-/* ----------メディアクエリ-------- */
-
-
-@media screen and (max-width: 1070px){
-  #about main section h1 {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 768px){
-  #about #about_top::before {
-    content:  none;
-  }
-
-  #about .about_top_midashi h2 {
-    font-size: 2.5rem;
-  }
-  #about .about_top_midashi h2 span {
-    font-size: 1.8rem;
-  } 
-
-  #about main section div {
-    width: 80%;
-  }
-  #about main section h1 {
-    font-size: 2.2rem;
-  }
-  #about main section p {
-    font-size: 1.3rem;
-  }
-  #about main section h3 {
-    font-size: 2rem;
-  }
-
-  #about main .first_content::after {
-    height: 190px;
-    bottom: -260px;
-  }
-}
-@media screen and (max-width: 405px){
-  #about main section h1 {
-    font-size: 1.5rem;
-  }#about main .first_content::after {
-    height: 130px;
-    bottom: -205px;
-  }
-  #about main section h3 {
-    font-size: 1.5rem;
-    margin: 280px 0 80px 0;
-  }
-  #about main section h3::before {
-    width:  145px;
-    top: 50px;
-  }
-}
-@media screen and (max-width: 320px){
-  #about main section h1 {
-    font-size: 1.4rem;
-  }
-}
-
 /*ここからグリッドボックスの設定*/
 #box_wrapper .grid_box{
   display:grid;
@@ -244,7 +182,7 @@ html,body{
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
-  background-image:url(../images/turituri.jpg) ;
+  background-image:url(../../images/turituri.jpg) ;
   height: 300px;
 }
 #box_wrapper .box3{
@@ -252,7 +190,7 @@ html,body{
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 1;
-  background-image: url(../images/makimk3.jpg);
+  background-image: url(../../images/makimk3.jpg);
   height: 300px;
 }
 #box_wrapper .box4{
@@ -260,7 +198,7 @@ html,body{
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 5;
-  background-image: url(../images/hito.jpg);
+  background-image: url(../../images/hito.jpg);
   height: 300px;
 }
 #box_wrapper .box5{
@@ -268,7 +206,7 @@ html,body{
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 4;
-  background-image: url(../images/kouryu.jpg);
+  background-image: url(../../images/kouryu.jpg);
   height: 300px;
 }
 /*.title_name pの疑似要素設定*/
@@ -287,6 +225,159 @@ html,body{
 }
 #box_wrapper .box4 p::after{
   width: 25%;
+}
+
+/*common_contact*/
+.common_contact{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 200px auto 70px;
+}
+.common_contact h2{
+  font-size: 1.8rem;
+}
+.common_contact p:first-of-type:before{
+  content: "";
+  width: 160px;
+  height: 1.8px;
+  background: #707070;
+  position: absolute;
+  left: 20%;
+  bottom: 55px;
+  z-index: 99;
+}
+.common_contact p{
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+.common_contact p:first-of-type{
+  position: relative;
+  padding-top: 20px;
+}
+.common_contact a{
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  transition: 1s;
+}
+.common_contact a span {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.common_contact .contact_btn {
+  display: inline-block;
+  position: relative;
+  width: 430px;
+  height: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.common_contact .contact_btn::before,
+.common_contact .contact_btn::after {
+  content: "";
+  width: 440px;
+  height: 70px;
+  position: absolute;
+}
+.common_contact .contact_btn::before {
+  top: 0;
+  left: 0;
+  border-top: #000 1px solid;
+  border-left: #000 1px solid;
+}
+.common_contact .contact_btn::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: #000 1px solid;
+  border-right: #000 1px solid;
+}
+.common_contact .contact_btn:hover{
+  background-color: rgba(205,205,205,1);
+}
+.common_contact p:last-of-type{
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+.common_contact address{
+  margin-top: 50px;
+  font-size: 1.3rem;
+  font-style: normal;
+}
+
+/*common_map*/
+.common_map iframe{
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+/* ----------メディアクエリ-------- */
+
+
+@media screen and (max-width: 1070px){
+  #about main section h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #about #about_top::before {
+    content:  none;
+  }
+
+  #about .about_top_midashi h2 {
+    font-size: 2.5rem;
+  }
+  #about .about_top_midashi h2 span {
+    font-size: 1.8rem;
+  } 
+
+  #about main section div {
+    width: 80%;
+  }
+  #about main section h1 {
+    font-size: 2.2rem;
+  }
+  #about main section p {
+    font-size: 1.3rem;
+  }
+  #about main section h3 {
+    font-size: 2rem;
+  }
+
+  #about main .first_content::after {
+    height: 190px;
+    bottom: -260px;
+  }
+}
+@media screen and (max-width: 405px){
+  #about main section h1 {
+    font-size: 1.5rem;
+  }#about main .first_content::after {
+    height: 130px;
+    bottom: -205px;
+  }
+  #about main section h3 {
+    font-size: 1.5rem;
+    margin: 280px 0 80px 0;
+  }
+  #about main section h3::before {
+    width:  145px;
+    top: 50px;
+  }
+}
+@media screen and (max-width: 320px){
+  #about main section h1 {
+    font-size: 1.4rem;
+  }
 }
 
 /*box1の余白と文字段落ちと疑似要素の調整*/
@@ -338,93 +429,16 @@ html,body{
       font-size: 1.4rem;
   }
 }
-/*common_contact*/
-.common_contact{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 200px auto 70px;
+
+/* contactレスポンシブ */
+@media screen and (max-width: 768px) {
+  .common_contact .contact_btn {
+    width: 70%;
+    min-width: 330px;
 }
-.common_contact h2{
-  font-size: 1.8rem;
+  .common_contact .contact_btn::before,
+  .common_contact .contact_btn::after {
+    width: 103%;
 }
-.common_contact p:first-of-type:before{
-  content: "";
-  width: 160px;
-  height: 1.8px;
-  background: #707070;
-  position: absolute;
-  left: 20%;
-  bottom: 55px;
-  z-index: 99;
-}
-.common_contact p{
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 0;
-}
-.common_contact p:first-of-type{
-  position: relative;
-  padding-top: 20px;
-}
-.common_contact a{
-  text-align: center;
-  font-size: 1.5rem;
-  color: #000;
-  letter-spacing: 1.5px;
-  text-decoration: none;
-  transition: 1s;
-}
-.common_contact a span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.common_contact .contact_btn {
-  display: inline-block;
-  position: relative;
-  width: 430px;
-  height: 60px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.common_contact .contact_btn::before,
-.common_contact .contact_btn::after {
-  content: "";
-  width: 440px;
-  height: 70px;
-  position: absolute;
-}
-.common_contact .contact_btn::before {
-  top: 0;
-  left: 0;
-  border-top: #000 1px solid;
-  border-left: #000 1px solid;
-}
-.common_contact .contact_btn::after {
-  bottom: 0;
-  right: 0;
-  border-bottom: #000 1px solid;
-  border-right: #000 1px solid;
-}
-.common_contact .contact_btn:hover{
-  background-color: rgba(205,205,205,1);
-}
-.common_contact p:last-of-type{
-  font-size: 0.8rem;
-  margin-bottom: 20px;
-}
-.common_contact address{
-  margin-top: 50px;
-  font-size: 1.3rem;
-  font-style: normal;
 }
 
-/*common_map*/
-.common_map iframe{
-  width: 100%;
-  margin-bottom: 150px;
-}
