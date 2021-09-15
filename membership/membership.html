@@ -11,20 +11,26 @@
 </head>
 <body id="membership">
   <section>
-   <div class="membership_midashi">
+    <div class="membership_midashi">
       <div class="midashi_back">
-        <h2><span>できること</span>賛助会員・寄付金について</h2>
+        <h2><span id="midashi_h2">できること</span><span id="midashi_span"><span>賛助会員・</span><span>寄付金について</span></span></h2>
       </div>
     </div>
   </section>
   <main id="membership_main">
     <section class="membership_class">
     <section class="main_section">
-      <p>
+      <p id="div_p">
        「私にもできることがありますか？」
         <span>吉里吉里国に共感してくださる方から、よくいただく言葉です。</span>
         あなたにできることがたくさんあります。
       </p>
+      <div class="delete">
+        <p><span>「私にもできることがありますか？」</span>
+        吉里吉里国に共感してくださる方から、<span>よくいただく言葉です。</span></p>
+        <p>あなたにできることが、<span>たくさんあります。</span></p>
+        <p>ぜひ、私たちと一緒に</p>
+      </div>
       <div>
         <ul>
           <li>
@@ -91,13 +97,13 @@
       <div class="container">
         <table class="table_items">
           <tr>
-            <th></th>
-            <th class="narrow"></th>
+            <th class="table_delete"></th>
+            <th class="narrow"><span class="table_responsive">正社員</span></th>
             <th>入会金</th>
             <th>年会費（一口）</th>
           </tr>
           <tr>
-            <th rowspan="2"><span>正会員</span></th>
+            <th rowspan="2"  class="table_delete" class="narrow"><span>正会員</span></th>
             <td>個人</td>
             <td>3,000円</td>
             <td>3,000円</td>
@@ -107,8 +113,18 @@
             <td>10,000円</td>
             <td>10,000円</td>
           </tr>
+          <tr class="table_responsive">
+            <th class="narrow"><span>賛助会員</span></th>
+            <th>入会金</th>
+            <th>年会費（一口）</th>
+          </tr>
           <tr>
-            <th rowspan="2"><span>賛助会員</span></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <th rowspan="2" class="table_delete"><span>賛助会員</span></th>
             <td>個人</td>
             <td>1,000円</td>
             <td>3,000円</td>
@@ -133,6 +149,9 @@
       </div>
       <div class="container_box">
         <div class="image"></div>
+      </div>
+      <div class="disappear">
+        <button class="move">購入ページはこちら</button>
       </div>
     </section>
   </section>

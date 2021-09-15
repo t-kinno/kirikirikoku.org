@@ -22,10 +22,6 @@ body{
     font-size: 1.4rem;
     margin: 0;
 }
-#membership .membership_midashi h2{
-    margin: 0;
-    font-size: 2.2rem;
-}
 #membership .membership_midashi{
     width: 100%;
     height: 50vh;
@@ -34,6 +30,7 @@ body{
     background-position: center;
     background-size: cover;
 }
+
 #membership .membership_midashi .midashi_back{
     background: rgba(255,255,255,0.5);
     width: 100%;
@@ -43,6 +40,7 @@ body{
     align-items: center;
 }
 #membership .membership_midashi h2{
+    margin: 0;
     letter-spacing: 0.2rem;
     display:flex;
     flex-wrap: wrap;
@@ -54,17 +52,23 @@ body{
     text-align:center;
     margin-bottom: 0.7rem;
 }
+#membership .membership_midashi h2 #midashi_span span{
+    font-size: 2rem;
+}
 /*------------------------------
 ここからmain_section
 -------------------------------*/
 #membership_main .main_section p{
-    margin: 0 0 180px;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     line-height: 40px;
     font-weight: bold;
     font-size: 1rem;
+    margin: 0 0 180px;
+}
+#membership_main .main_section .delete{
+    display:none;
 }
 #membership_main .main_section p span{
     width: 100%;
@@ -123,6 +127,9 @@ body{
 }
 #membership_main .donate_section .button_surround{
     margin: 110px 0 0 0;
+}
+#membership_main .donate_section .disappear{
+    display: none;
 }
 #membership_main .donate_section .move{
     display: inline-block;
@@ -192,7 +199,7 @@ body{
 #membership_main .table_items th{
     width: 108px;
     color: #ff0000;
-    font-size:0.8rem;
+    font-size:0.7rem;
     font-weight: normal;
 }
 #membership_main .table_items th span{
@@ -201,7 +208,7 @@ body{
     background:#ff0000;
     vertical-align: middle;
     border-radius:0.9rem;
-    font-size:1rem;
+    font-size:1.5vw;
     padding: 2px 10px;
 }
 #membership_main .table_items .narrow{
@@ -220,6 +227,12 @@ body{
     border-bottom: solid 10px #fff ;
 /*真ん中のtdに間を開ける方法*/
 }
+#membership_main .table_items .table_responsive{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+
+}
 /*--------------------------
 ここからcontainer_box
 -----------------------------*/
@@ -237,11 +250,125 @@ body{
     height: 280px;
 }
 
-
+@media screen and (max-width: 995px){
+    #membership_main .container{
+        width: 58%;
+    }
+    #membership_main .container_box{
+        width: 58%;
+    }
+}
 /*スマホ版に切り替わるwhithが768px*/
 @media screen and (max-width: 768px){
-    #membership_main .container,.container_box{
+    #membership .membership_midashi{
+        background:none;
+    }
+    #membership .membership_midashi h2{
+        width: 60%;
+    }
+    #membership .membership_midashi h2 span{
+        text-align: left;
+    }
+    #membership .membership_midashi h2 #midashi_h2{
+        margin-bottom: 50px;
+    }
+    #membership .membership_midashi h2 #midashi_span{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #membership_main .main_section ul{
         display: none;
+    }
+    #membership_main .main_section p{
+        margin: 0;
+        justify-content: left;
+    }
+    #membership_main .main_section p span{
+        text-align: left;
+    }
+    #membership_main .main_section .delete{
+        display:block;
+        width: 80%;
+        margin: auto;
+    }
+    #membership_main .main_section #div_p{
+        display: none;
+    }
+    #membership_main .main_section .delete p{
+        margin-bottom:20px ;
+    }
+    #membership_main .membership_class{
+        margin-top: 0px;
+    }
+    #membership_main .donate_section{
+        display: block;
+        margin: 90px auto;
+        width: 80%;
+    }
+    #membership_main .container{
+        width: auto;
+        border: none;
+    }
+    #membership_main .container h3{
+        display: none;
+    }
+    #membership_main .container .container_flex{
+        flex-wrap: wrap;
+        justify-content: left;
+        width: 70%;
+        margin-left: 20px;
+    }
+    #membership_main .container .container_flex div{
+        padding: 20px;
+        margin-bottom: 20px ;
+    }
+    #membership_main .container .container_flex div p{
+        font-size: 1.1rem;
+    }
+    #membership_main .donate_section .title_width{
+        width: auto;
+        margin-bottom:80px ;
+    }
+    #membership_main .donate_section .title_margin{
+        max-width: 170px;
+    }
+    #membership_main .table_items .table_delete{
+        display: none;
+    }
+    #membership_main .table_items .table_responsive{
+        visibility: visible;
+    }
+    #membership_main .table_items th span{
+        font-size: 0.6rem;
+    }
+    #membership_main .container_box .image{
+        width: 170%;
+        height: 200px;   
+    }
+    #membership_main .donate_section .button_surround{
+        display: none;
+    }
+    #membership_main .donate_section .disappear{
+        display: block;
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 470px){
+    #membership_main .main_section{
+        width: 90%;
+        margin: auto;
+    }
+    #membership_main .main_section .delete{
+        width: 110%;
+    }
+    #membership_main .donate_section .title_margin{
+        max-width: 166px;
+    }
+    #membership_main .container .container_flex{
+        width: 100%;
+    }
+    #membership_main .donate_section{
+        width: 95%;
     }
 }
 
