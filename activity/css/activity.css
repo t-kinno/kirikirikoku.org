@@ -8,18 +8,14 @@ html,body{
   width: 100%;
   margin: 0;
 }
-#activity p {
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  line-height: 2.5em;
-}
 #activity #activity_top {
   width: 100%;
-  height: 60vh;
+  height: 590px;
   background-size: cover;
   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
                     url('../../images/activ_top.jpg');
   position: relative;
+  background-position: center center;
 }
 #activity #activity_top::before {
   content:  "";
@@ -30,6 +26,15 @@ html,body{
   left: 50%;
   bottom: -60px;
   z-index: 99;
+}
+#activity #activity_top > img {
+  position: absolute;
+  height: 590px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  object-fit: cover;
+  width: 100%;
 }
 #activity .logo img {
   position: absolute;
@@ -43,71 +48,104 @@ html,body{
   justify-content: center;
   align-items: center;
   color: #fff;
+  position: absolute;
 }
 #activity .activity_top_midashi h2 {
   margin: 0;
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   letter-spacing: 0.2em;
   text-shadow: 1px 2px 5px #000;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  line-height: 2;
 }
 #activity .activity_top_midashi h2 span {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   width: 100%;
   text-align: center;
-  margin-bottom: 0.7em;
 }
 
 
 /* -------------main------------- */
-
+#activity p {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 2.5em;
+}
 #activity main {
   margin-top: 150px;
 }
-#activity #activity_decription {
+#activity section {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
+}
+#activity .activity_overview {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   width: 80%;
-  margin: auto;
+  margin: 130px auto 100px;
 }
 #activity .activity_center {
   text-align: center;
+  width: 100%;
 }
-#activity #activity_decription .activity_left {
-  width: 55%;
+#activity .activity_overview .activity_left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
-#activity #activity_decription .activity_left h1 {
-  font-size: 1.8rem;
-  letter-spacing: 0.3em;
-  margin-bottom: 47px;
+#activity .activity_overview .activity_left div {
+  display: flex;
+  flex-direction: column;
 }
-#activity #activity_decription .activity_left p:not(:first-of-type) {
-  margin-left: 2.5rem;
+#activity .activity_overview .activity_left h3 {
+  font-size: 2.2rem;
+  margin: 0;
+  letter-spacing: 0.2em;
+  color: #008CC2;
+  display: inline-block;
+  text-align: center;
+  margin-top: 3.3rem;
 }
-#activity #activity_decription p {
+#activity .activity_overview p {
   font-size: 1rem;
+  font-weight: bold;
   letter-spacing: 0.1em;
   line-height: 2.5em;
   text-align: left;
 }
-#activity #activity_decription .activity_right {
-  width: 40%;
+#activity .activity_overview .activity_right {
+  width: 50%;
   display: flex;
   justify-content: center;
+  margin-left: 15px;
 }
-#activity #activity_decription .activity_right img {
-  width: 100%;
+#activity #activity_title .activity_right p {
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: 2em;
+  font-size: 1.1rem;
+  margin: 0;
 }
-#activity #activity_decription div:last-child {
+#activity .activity_overview_bottom .activity_left img {
+  width: 40%;
+  height: auto;
+}
+#activity .activity_overview div:last-child {
   width: 55%;
 }
-#activity #activity_decription ol li {
+#activity .activity_overview ol li {
   margin-bottom: 1.25em;
 }
+*{
+  box-sizing: border-box;
+}
+
+
 
 /*ここからグリッドボックスの設定*/
 #box_wrapper .grid_box{
@@ -325,59 +363,59 @@ html,body{
 /* ----------メディアクエリ-------- */
 
 @media screen and (max-width: 1070px){
-  #about main section h1 {
+  #activity main section h1 {
     font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 768px){
-  #about #about_top::before {
+  #activity #activity_top::before {
     content:  none;
   }
 
-  #about .about_top_midashi h2 {
+  #activity .activity_top_midashi h2 {
     font-size: 2.5rem;
   }
-  #about .about_top_midashi h2 span {
+  #activity .activity_top_midashi h2 span {
     font-size: 1.8rem;
   } 
 
-  #about main section div {
+  #activity main section div {
     width: 80%;
   }
-  #about main section h1 {
+  #activity main section h1 {
     font-size: 2.2rem;
   }
-  #about main section p {
+  #activity main section p {
     font-size: 1.3rem;
   }
-  #about main section h3 {
+  #activity main section h3 {
     font-size: 2rem;
   }
 
-  #about main .first_content::after {
+  #activity main .first_content::after {
     height: 190px;
     bottom: -260px;
   }
 }
 @media screen and (max-width: 405px){
-  #about main section h1 {
+  #activity main section h1 {
     font-size: 1.5rem;
-  }#about main .first_content::after {
+  }#activity main .first_content::after {
     height: 130px;
     bottom: -205px;
   }
-  #about main section h3 {
+  #activity main section h3 {
     font-size: 1.5rem;
     margin: 280px 0 80px 0;
   }
-  #about main section h3::before {
+  #activity main section h3::before {
     width:  145px;
     top: 50px;
   }
 }
 @media screen and (max-width: 320px){
-  #about main section h1 {
+  #activity main section h1 {
     font-size: 1.4rem;
   }
 }

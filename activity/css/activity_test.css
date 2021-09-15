@@ -4,17 +4,17 @@ html,body{
   margin: 0;
   padding: 0;
 }
-#project body {
+#activity body {
   width: 100%;
   margin: 0;
 }
-#project #project_top {
+#activity #activity_top {
   width: 100%;
   height: 590px;
   position: relative;
   background-position: center center;
 }
-#project #project_top::before {
+#activity #activity_top::before {
   content:  "";
   width:  2px;
   height: 122px;
@@ -24,7 +24,7 @@ html,body{
   bottom: -60px;
   z-index: 99;
 }
-#project #project_top > img {
+#activity #activity_top > img {
   position: absolute;
   height: 590px;
   top: 50%;
@@ -33,12 +33,12 @@ html,body{
   object-fit: cover;
   width: 100%;
 }
-#project .logo img {
+#activity .logo img {
   position: absolute;
   width: 7%;
   margin: 40px 0 0 30px;
 }
-#project .top_daimei {
+#activity .activity_top_midashi {
   width: 100%;
   height: 100%;
   display: flex;
@@ -47,7 +47,7 @@ html,body{
   color: #fff;
   position: absolute;
 }
-#project .top_daimei h2 {
+#activity .activity_top_midashi h2 {
   margin: 0;
   font-size: 2.2rem;
   letter-spacing: 0.2em;
@@ -57,87 +57,75 @@ html,body{
   justify-content: center;
   line-height: 2;
 }
-#project .top_daimei h2 span {
+#activity .activity_top_midashi h2 span {
   font-size: 1.5rem;
   width: 100%;
   text-align: center;
 }
 /* -------------main------------- */
-#project .project_overview {
+#activity .activity_overview {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   width: 80%;
   margin: 130px auto 100px;
 }
-#project .project_overview .left {
+#activity .activity_overview .activity_left {
   width: 50%;
   display: flex;
   justify-content: center;
 }
-#project .project_overview .left h3 {
+#activity .activity_overview .activity_left h3 {
   font-size: 2.2rem;
   margin: 0;
   letter-spacing: 0.2em;
   color: #008CC2;
 }
-#project .project_overview .right {
+#activity .activity_overview .activity_right {
   width: 50%;
   display: flex;
   justify-content: center;
   margin-left: 15px;
 }
-#project .project_overview .right p {
+#activity .activity_overview .activity_right p {
   margin: 0;
 }
-#project #project_title .left div {
+#activity #activity_title .activity_left div {
   display: flex;
   flex-direction: column;
 }
-#project #project_title .left p {
+#activity #activity_title .activity_left p {
   display: inline-block;
   line-height: 1;
   margin-top: 0;
   margin-bottom: 2em;
   font-size: 1.1rem;
 }
-#project #project_title .left h3 {
+#activity #activity_title .activity_left h3 {
   display: inline-block;
   text-align: center;
   margin-top: 3.3rem;
 }
-#project #project_title .left h3 span {
+#activity #activity_title .activity_left h3 span {
   font-size: 1.5em;
   letter-spacing: 0.2em;
 }
-#project #project_title .right p {
+#activity #activity_title .activity_right p {
   margin-top: 3.3rem;
 }
-#project .project_daimei_image {
-  width: 100%;
-  height: 50vh;
-  min-height: 300px;
-  background-size: cover;
-}
-#project .project_daimei_image img {
-  width: 100%;
-  height: 50vh;
-  min-height: 300px;
-  object-fit: cover;
-}
-#project .project {
+#activity .activity {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-#project p {
+#activity p {
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.1em;
   line-height: 2.5em;
   text-align: left;
 }
-#project p span {
+#activity p span {
   font-size: 1.2rem;
 }
 *{
@@ -146,6 +134,7 @@ html,body{
 #box_wrapper{
   width: 100%;
 }
+
 
 /*ここからグリッドボックスの設定*/
 #box_wrapper .grid_box{
@@ -423,52 +412,52 @@ html,body{
 }
 
 
-/* forestレスポンシブ */
+/* activityレスポンシブ */
 
 @media screen and (max-width: 768px) {
-  #project p {
+  #activity p {
     font-size: 3.5vw;
   }
-  #project #project_top {
+  #activity #activity_top {
     height: 66vh;
   }
-  #project #project_top img {
+  #activity #activity_top img {
     height: 66vh;
   }
-  #project #project_top::before {
+  #activity #activity_top::before {
     display: none;
   }
-  #project .project_overview {
+  #activity .activity_overview {
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 90%;
   }
-  #project .project_overview .left,
-  #project .project_overview .right {
+  #activity .activity_overview .activity_left,
+  #activity .activity_overview .activity_right {
     justify-content: flex-start;
     width: 100%;
   }
-  #project #project_title .left p {
+  #activity #activity_title .activity_left p {
     font-size: 1.8rem;
     margin-bottom: 1em;
   }
-  #project #project_title .right p {
+  #activity #activity_title .activity_right p {
     letter-spacing: 0.2vw;
   }
-  #project #project_title .left h3 span {
+  #activity #activity_title .activity_left h3 span {
     font-size: 1.2em;
   }
-  #project #project_title .left h3 {
+  #activity #activity_title .activity_left h3 {
     font-size: 6vw;
     letter-spacing: 0.1rem;
     line-height: 1.5;
     margin-bottom: 0;
   }
-  #project .project_daimei_image img,
-  #project .project_daimei_image {
+  #activity .activity_daimei_image img,
+  #activity .activity_daimei_image {
     height: 25vh;
 }
-  #project .project_overview .left h3 {
+  #activity .activity_overview .activity_left h3 {
     font-size: 6vw;
     margin-bottom: 70px;
     line-height: 1.5;
