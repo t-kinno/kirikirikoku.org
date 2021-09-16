@@ -70,6 +70,10 @@ html,body{
   width: 80%;
   margin: 130px auto 100px;
 }
+#activity .activity_overview .activity_center h2 {
+  font-size: 1.8rem;
+  text-align: center;
+}
 #activity .activity_overview .activity_left {
   width: 50%;
   display: flex;
@@ -134,7 +138,7 @@ html,body{
 #box_wrapper{
   width: 100%;
 }
-
+/* -------------mainおわり------------- */
 
 /*ここからグリッドボックスの設定*/
 #box_wrapper .grid_box{
