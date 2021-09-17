@@ -170,92 +170,106 @@ body{
 }
 
 /*common_contact*/
-.common_contact{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 200px auto 70px;
-  }
-  .common_contact h2{
-    font-size: 1.8rem;
-  }
-  .common_contact p:first-of-type:before{
-    content: "";
-    width: 170px;
-    height: 1.8px;
-    background: #707070;
-    position: absolute;
-    left: 20%;
-    bottom: 55px;
-    z-index: 99;
-  }
-  .common_contact p{
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 0;
-  }
-  .common_contact p:first-of-type{
-    position: relative;
-    padding-top: 20px;
-  }
-  .common_contact a{
-    text-align: center;
-    font-size: 1.5rem;
-    color: #000;
-    letter-spacing: 1.5px;
-    text-decoration: none;
-    transition: 1s;
-  }
-  .common_contact a span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
-  .common_contact .contact_btn {
-    display: inline-block;
-    position: relative;
-    width: 430px;
-    height: 60px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .common_contact .contact_btn::before,
-  .common_contact .contact_btn::after {
-    content: "";
-    width: 440px;
-    height: 70px;
-    position: absolute;
-  }
-  .common_contact .contact_btn::before {
-    top: 0;
-    left: 0;
-    border-top: #000 1px solid;
-    border-left: #000 1px solid;
-  }
-  .common_contact .contact_btn::after {
-    bottom: 0;
-    right: 0;
-    border-bottom: #000 1px solid;
-    border-right: #000 1px solid;
-  }
-  .common_contact .contact_btn:hover{
-    background-color: rgba(205,205,205,1);
-  }
-  .common_contact p:last-of-type{
-    font-size: 0.8rem;
-    margin-bottom: 20px;
-  }
-  .common_contact address{
-    margin-top: 50px;
-    font-size: 1.3rem;
-    font-style: normal;
-  }
-  
-  /*common_map*/
-  .common_map iframe{
-    width: 100%;
-    margin-bottom: 150px;
-  }
+#common_contact{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 200px auto 70px;
+}
+#common_contact h2{
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#common_contact h2:after{
+  content: "";
+  width: 160px;
+  height: 1.8px;
+  margin-top: 40px;
+  background: #707070;
+  z-index: 99;
+}
+#common_contact p{
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+#common_contact p:first-of-type{
+  position: relative;
+  padding-top: 20px;
+}
+#common_contact a{
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  transition: 1s;
+}
+#common_contact a span {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#common_contact .contact_btn {
+  display: inline-block;
+  position: relative;
+  width: 430px;
+  height: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#common_contact .contact_btn::before,
+#common_contact .contact_btn::after {
+  content: "";
+  width: 440px;
+  height: 70px;
+  position: absolute;
+}
+#common_contact .contact_btn::before {
+  top: 0;
+  left: 0;
+  border-top: #000 1px solid;
+  border-left: #000 1px solid;
+}
+#common_contact .contact_btn::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: #000 1px solid;
+  border-right: #000 1px solid;
+}
+#common_contact .contact_btn:hover{
+  background-color: rgba(205,205,205,1);
+}
+#common_contact p:last-of-type{
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+#common_contact address{
+  margin-top: 50px;
+  font-size: 1.3rem;
+  font-style: normal;
+}
+
+/*common_map*/
+.common_map iframe{
+  width: 100%;
+  margin-bottom: 150px;
+}
+/* contactレスポンシブ */
+@media screen and (max-width: 768px) {
+  #common_contact .contact_btn {
+    width: 70%;
+    min-width: 330px;
+}
+  #common_contact .contact_btn::before,
+  #common_contact .contact_btn::after {
+    width: 103%;
+}
+}
