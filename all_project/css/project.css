@@ -434,6 +434,9 @@ html,body{
   #project #project_top {
     height: 66vh;
   }
+  #project .logo img {
+    display: none;
+  }
   #project #project_top > img {
     height: 66vh;
   }
