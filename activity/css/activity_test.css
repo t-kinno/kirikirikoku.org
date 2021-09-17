@@ -426,6 +426,9 @@ html,body{
   #activity #activity_top {
     height: 66vh;
   }
+  #activity .logo img {
+    display: none;
+  }
   #activity #activity_top img {
     height: 66vh;
   }
