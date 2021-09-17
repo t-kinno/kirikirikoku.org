@@ -197,6 +197,8 @@ body{
   font-weight: bold;
   margin: 0;
   text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 2.5em;
 }
 #common_contact p:first-of-type{
   position: relative;
@@ -267,9 +269,9 @@ body{
   #common_contact .contact_btn {
     width: 70%;
     min-width: 330px;
-}
+  }
   #common_contact .contact_btn::before,
   #common_contact .contact_btn::after {
     width: 103%;
-}
+  }
 }
