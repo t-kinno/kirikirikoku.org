@@ -26,6 +26,8 @@
   font-weight: bold;
   margin: 0;
   text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 2.5em;
 }
 #common_contact p:first-of-type{
   position: relative;
