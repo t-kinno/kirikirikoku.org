@@ -11,9 +11,6 @@ html,body{
 #activity #activity_top {
   width: 100%;
   height: 590px;
-  background-size: cover;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-                    url('../../images/activ_top.jpg');
   position: relative;
   background-position: center center;
 }
@@ -65,58 +62,37 @@ html,body{
   width: 100%;
   text-align: center;
 }
-
-
+#activity .activity_overview .activity_left .activ_green {
+  color: #91AC52;
+}
+#activity .activity_overview .activity_left .activ_orange {
+  color: #F08437;
+}
+#activity .activity_overview .activity_left .activ_blue {
+  color: #008CC2;
+}
 /* -------------main------------- */
-#activity p {
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  line-height: 2.5em;
-}
-#activity main {
-  margin-top: 150px;
-}
-#activity section {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
 #activity .activity_overview {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   width: 80%;
-  margin: 130px auto 100px;
+  margin: 130px auto 10px;
 }
-#activity .activity_center {
+#activity .activity_overview .activity_center h2 {
+  font-size: 1.8rem;
   text-align: center;
-  width: 100%;
+  margin-top: 0;
 }
 #activity .activity_overview .activity_left {
   width: 50%;
   display: flex;
   justify-content: center;
 }
-#activity .activity_overview .activity_left div {
-  display: flex;
-  flex-direction: column;
-}
 #activity .activity_overview .activity_left h3 {
   font-size: 2.2rem;
   margin: 0;
   letter-spacing: 0.2em;
-  color: #008CC2;
-  display: inline-block;
-  text-align: center;
-  margin-top: 3.3rem;
-}
-#activity .activity_overview p {
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  line-height: 2.5em;
-  text-align: left;
 }
 #activity .activity_overview .activity_right {
   width: 50%;
@@ -124,28 +100,77 @@ html,body{
   justify-content: center;
   margin-left: 15px;
 }
-#activity #activity_title .activity_right p {
-  display: inline-block;
-  line-height: 1;
-  margin-bottom: 2em;
-  font-size: 1.1rem;
+#activity .activity_overview .activity_right p {
   margin: 0;
 }
-#activity .activity_overview_bottom .activity_left img {
-  width: 40%;
-  height: auto;
+#activity #activity_title .activity_left div {
+  display: flex;
+  flex-direction: column;
 }
-#activity .activity_overview div:last-child {
+#activity #activity_title .activity_left p {
+  display: inline-block;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 2em;
+  font-size: 1.1rem;
+}
+#activity #activity_title .activity_left h3 {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+}
+#activity #activity_title .activity_left h3 span {
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+}
+#activity #activity_title .activity_right p {
+  margin: 0;
+}
+#activity .activity_project_overview {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  margin: 130px auto 150px;
+}
+#activity .activity_project_overview .activity_project_left {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+#activity .activity_project_overview .activity_project_left img {
   width: 55%;
 }
-#activity .activity_overview ol li {
-  margin-bottom: 1.25em;
+#activity .activity_project_overview .activity_project_right {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#activity .activity_project_overview .activity_project_right ul {
+  padding: 20px;
+}
+#activity .activity {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#activity p {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 2.5em;
+  text-align: left;
+}
+#activity p span {
+  font-size: 1.2rem;
 }
 *{
   box-sizing: border-box;
 }
-
-
+#box_wrapper{
+  width: 100%;
+}
+/* -------------mainおわり------------- */
 
 /*ここからグリッドボックスの設定*/
 #box_wrapper .grid_box{
@@ -267,9 +292,8 @@ html,body{
   width: 25%;
 }
 
-
 /*common_contact*/
-.common_contact{
+#common_contact{
   width: 100%;
   display: flex;
   justify-content: center;
@@ -277,29 +301,33 @@ html,body{
   align-items: center;
   margin: 200px auto 70px;
 }
-.common_contact h2{
+#common_contact h2{
   font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.common_contact p:first-of-type:before{
+#common_contact h2:after{
   content: "";
   width: 160px;
   height: 1.8px;
+  margin-top: 40px;
   background: #707070;
-  position: absolute;
-  left: 20%;
-  bottom: 55px;
   z-index: 99;
 }
-.common_contact p{
+#common_contact p{
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 2.5em;
 }
-.common_contact p:first-of-type{
+#common_contact p:first-of-type{
   position: relative;
   padding-top: 20px;
 }
-.common_contact a{
+#common_contact a{
   text-align: center;
   font-size: 1.5rem;
   color: #000;
@@ -307,13 +335,14 @@ html,body{
   text-decoration: none;
   transition: 1s;
 }
-.common_contact a span {
+#common_contact a span {
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
-.common_contact .contact_btn {
+#common_contact .contact_btn {
   display: inline-block;
   position: relative;
   width: 430px;
@@ -321,104 +350,54 @@ html,body{
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.common_contact .contact_btn::before,
-.common_contact .contact_btn::after {
+#common_contact .contact_btn::before,
+#common_contact .contact_btn::after {
   content: "";
   width: 440px;
   height: 70px;
   position: absolute;
 }
-.common_contact .contact_btn::before {
+#common_contact .contact_btn::before {
   top: 0;
   left: 0;
   border-top: #000 1px solid;
   border-left: #000 1px solid;
 }
-.common_contact .contact_btn::after {
+#common_contact .contact_btn::after {
   bottom: 0;
   right: 0;
   border-bottom: #000 1px solid;
   border-right: #000 1px solid;
 }
-.common_contact .contact_btn:hover{
+#common_contact .contact_btn:hover{
   background-color: rgba(205,205,205,1);
 }
-.common_contact p:last-of-type{
+#common_contact p:last-of-type{
   font-size: 0.8rem;
   margin-bottom: 20px;
 }
-.common_contact address{
+#common_contact address{
   margin-top: 50px;
   font-size: 1.3rem;
   font-style: normal;
 }
-
+/* contactレスポンシブ */
+@media screen and (max-width: 768px) {
+  #common_contact .contact_btn {
+    width: 70%;
+    min-width: 330px;
+}
+  #common_contact .contact_btn::before,
+  #common_contact .contact_btn::after {
+    width: 103%;
+}
+}
 /*common_map*/
 .common_map iframe{
   width: 100%;
   margin-bottom: 150px;
 }
 
-
-/* ----------メディアクエリ-------- */
-
-@media screen and (max-width: 1070px){
-  #activity main section h1 {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 768px){
-  #activity #activity_top::before {
-    content:  none;
-  }
-
-  #activity .activity_top_midashi h2 {
-    font-size: 2.5rem;
-  }
-  #activity .activity_top_midashi h2 span {
-    font-size: 1.8rem;
-  } 
-
-  #activity main section div {
-    width: 80%;
-  }
-  #activity main section h1 {
-    font-size: 2.2rem;
-  }
-  #activity main section p {
-    font-size: 1.3rem;
-  }
-  #activity main section h3 {
-    font-size: 2rem;
-  }
-
-  #activity main .first_content::after {
-    height: 190px;
-    bottom: -260px;
-  }
-}
-@media screen and (max-width: 405px){
-  #activity main section h1 {
-    font-size: 1.5rem;
-  }#activity main .first_content::after {
-    height: 130px;
-    bottom: -205px;
-  }
-  #activity main section h3 {
-    font-size: 1.5rem;
-    margin: 280px 0 80px 0;
-  }
-  #activity main section h3::before {
-    width:  145px;
-    top: 50px;
-  }
-}
-@media screen and (max-width: 320px){
-  #activity main section h1 {
-    font-size: 1.4rem;
-  }
-}
 
 /*box1の余白と文字段落ちと疑似要素の調整*/
 @media screen and (max-width:915px){
@@ -466,6 +445,61 @@ html,body{
   }
   #box_wrapper .title_name h2{
       display: flex;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
   }
+}
+
+/* activityレスポンシブ */
+
+@media screen and (max-width: 768px) {
+  #activity p {
+    font-size: 3.5vw;
+  }
+  #activity #activity_top {
+    height: 66vh;
+  }
+  #activity .logo img {
+    display: none;
+  }
+  #activity #activity_top img {
+    height: 66vh;
+  }
+  #activity #activity_top::before {
+    display: none;
+  }
+  #activity .activity_overview {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 90%;
+  }
+  #activity .activity_overview .activity_left,
+  #activity .activity_overview .activity_right {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  #activity #activity_title .activity_left p {
+    font-size: 1.8rem;
+    margin-bottom: 1em;
+  }
+  #activity #activity_title .activity_right p {
+    letter-spacing: 0.2vw;
+  }
+  #activity #activity_title .activity_left h3 span {
+    font-size: 1.2em;
+  }
+  #activity #activity_title .activity_left h3 {
+    font-size: 6vw;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  #activity .activity_daimei_image img,
+  #activity .activity_daimei_image {
+    height: 25vh;
+}
+  #activity .activity_overview .activity_left h3 {
+    font-size: 6vw;
+    margin-bottom: 70px;
+    line-height: 1.5;
+}
 }
