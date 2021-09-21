@@ -11,10 +11,8 @@ html,body{
 #about #about_top {
   width: 100%;
   height: 590px;
-  background-size: cover;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-                    url('../../images/about_top.JPG');
   position: relative;
+  background-position: center center;
 }
 #about #about_top::before {
   content:  "";
@@ -25,6 +23,15 @@ html,body{
   left: 50%;
   bottom: -60px;
   z-index: 99;
+}
+#about #about_top > img {
+  position: absolute;
+  height: 590px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  object-fit: cover;
+  width: 100%;
 }
 #about .logo img {
   position: absolute;
@@ -38,21 +45,22 @@ html,body{
   justify-content: center;
   align-items: center;
   color: #fff;
+  position: absolute;
 }
 #about .about_top_midashi h2 {
   margin: 0;
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   letter-spacing: 0.2em;
   text-shadow: 1px 2px 5px #000;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  line-height: 2;
 }
 #about .about_top_midashi h2 span {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   width: 100%;
   text-align: center;
-  margin-bottom: 0.7em;
 } 
 /* -------------main------------- */
 #about main section {
@@ -76,27 +84,27 @@ html,body{
   z-index: 99;
   margin-top: 80px;
 }
-#about main section h1 {
-  font-size: 2.8rem;
+#about main section h2 {
+  font-size: 1.8rem;
   letter-spacing: 0.2em;
   margin: 125px 0 55px 0;
 }
-#about main section p {
-  font-size: 1.1rem;
+#about p {
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.1em;
   line-height: 2.5em;
   text-align: left;
 }
 #about main section h3 {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   letter-spacing: 0.2em;
   margin: 364px 0 100px 0;
   position: relative;
 }
 #about main section h3::before {
   content:  "";
-  width:  320px;
+  width:  280px;
   height: 1px;
   background: rgba(0, 0, 0, 0.51);
   position: absolute;
@@ -106,6 +114,14 @@ html,body{
 #about main section:last-of-type {
   margin-bottom: 250px;
 }
+*{
+  box-sizing: border-box;
+}
+#box_wrapper{
+  width: 100%;
+}
+/* -------------mainおわり------------- */
+
 
 /*ここからグリッドボックスの設定*/
 #box_wrapper .grid_box{
@@ -226,6 +242,55 @@ html,body{
 #box_wrapper .box4 p::after{
   width: 25%;
 }
+/*box1の余白と文字段落ちと疑似要素の調整*/
+@media screen and (max-width:915px){
+  #box_wrapper .box1{
+      margin:0 auto;
+  }
+  #box_wrapper .box1 h2{
+      font-size: 1.3rem;
+  }
+  #box_wrapper .title_name p::after{
+      display: none;
+  }
+  #box_wrapper .title_name  span{
+      display:flex;
+      flex-wrap:wrap;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  #box_wrapper .grid_box{
+      display: block; 
+  }
+  #box_wrapper .box1{
+      display: none;
+  }
+  #box_wrapper .box2{
+      height: 250px;
+  }
+  #box_wrapper .box3{
+      height: 250px;
+  }
+  #box_wrapper .box4{
+      height:250px;
+  }
+  #box_wrapper .box5{
+      height:250px;
+  }
+  #box_wrapper .bgc{
+      padding: 20px 0 0 0;
+  }
+  #box_wrapper .title_name p{
+      display: flex;
+      font-size: 0.9rem;
+  }
+  #box_wrapper .title_name h2{
+      display: flex;
+      font-size: 1.4rem;
+  }
+}
 
 /*common_contact*/
 #common_contact{
@@ -334,15 +399,7 @@ html,body{
 }
 
 
-/* ----------メディアクエリ-------- */
-
-
-@media screen and (max-width: 1070px){
-  #about main section h1 {
-    font-size: 2rem;
-  }
-}
-
+/* aboutレスポンシブ */
 @media screen and (max-width: 768px){
   #about #about_top::before {
     content:  none;
@@ -350,13 +407,12 @@ html,body{
   #about .logo img {
     display: none;
   }
-  #about .about_top_midashi h2 {
-    font-size: 2.5rem;
-  }
   #about .about_top_midashi h2 span {
     font-size: 1.8rem;
   } 
-
+  #about .first_content h2 {
+    font-size: 6vw;
+  }
   #about main section div {
     width: 80%;
   }
@@ -373,76 +429,5 @@ html,body{
   #about main .first_content::after {
     height: 190px;
     bottom: -260px;
-  }
-}
-@media screen and (max-width: 405px){
-  #about main section h1 {
-    font-size: 1.5rem;
-  }#about main .first_content::after {
-    height: 130px;
-    bottom: -205px;
-  }
-  #about main section h3 {
-    font-size: 1.5rem;
-    margin: 280px 0 80px 0;
-  }
-  #about main section h3::before {
-    width:  145px;
-    top: 50px;
-  }
-}
-@media screen and (max-width: 320px){
-  #about main section h1 {
-    font-size: 1.4rem;
-  }
-}
-
-/*box1の余白と文字段落ちと疑似要素の調整*/
-@media screen and (max-width:915px){
-  #box_wrapper .box1{
-      margin:0 auto;
-  }
-  #box_wrapper .box1 h2{
-      font-size: 1.3rem;
-  }
-  #box_wrapper .title_name p::after{
-      display: none;
-  }
-  #box_wrapper .title_name  span{
-      display:flex;
-      flex-wrap:wrap;
-  }
-
-}
-
-@media screen and (max-width: 768px){
-  #box_wrapper .grid_box{
-      display: block; 
-  }
-  #box_wrapper .box1{
-      display: none;
-  }
-  #box_wrapper .box2{
-      height: 250px;
-  }
-  #box_wrapper .box3{
-      height: 250px;
-  }
-  #box_wrapper .box4{
-      height:250px;
-  }
-  #box_wrapper .box5{
-      height:250px;
-  }
-  #box_wrapper .bgc{
-      padding: 20px 0 0 0;
-  }
-  #box_wrapper .title_name p{
-      display: flex;
-      font-size: 0.9rem;
-  }
-  #box_wrapper .title_name h2{
-      display: flex;
-      font-size: 1.4rem;
   }
 }
