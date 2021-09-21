@@ -133,7 +133,6 @@ body{
 }
 #membership_main .donate_section .move{
     display: inline-block;
-    text-decoration: none;
     background: #ff0000;/*ボタン色*/
     color: #fff;
     border: solid 2px #fff;
@@ -145,6 +144,10 @@ body{
 #membership_main .donate_section .move:hover{
     background:#333;/*ホバーしたときの色*/
     color: #fff;
+}
+membership_main .donate_section .move a{
+    color: #fff;
+    text-decoration: none;
 }
 /*--------------------------
 ここからcontainer

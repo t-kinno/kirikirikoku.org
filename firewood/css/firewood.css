@@ -94,7 +94,6 @@ body{
     justify-content:center
 }
 #firewood_main button {
-    display: block;
     text-decoration: none;
     background: #ff0000;
     color: #fff;
