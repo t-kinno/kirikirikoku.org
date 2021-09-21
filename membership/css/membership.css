@@ -345,7 +345,7 @@ body{
         width: 170%;
         height: 200px;   
     }
-    #membership_main .donate_section .button_surround{
+    #membership_main #button_delete{
         display: none;
     }
     #membership_main .donate_section .disappear{
