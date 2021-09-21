@@ -9,7 +9,7 @@ html,body{
   margin: 0;
 }
 
-#overview #activity_top {
+#overview #overview_top {
   width: 100%;
   height: 60vh;
   background-image: url(../image/overview/overview_top.JPG);
