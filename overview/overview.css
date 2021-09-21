@@ -81,6 +81,12 @@ html,body{
   #overview table td:nth-child(2){
     padding-left: 25px;
   }
+  #overview .overview_top_midashi h2 {
+    font-size: 1.5rem;
+  }
+  #overview .overview_top_midashi h2 span {
+    font-size: 1.7rem;
+  }
 }
 /*グリッドデザイン*/
 *{
